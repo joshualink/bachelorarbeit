@@ -1,0 +1,61 @@
+\newcommand{\diameter}{20}
+\newcommand{\xone}{-50}
+\newcommand{\xtwo}{450}
+\newcommand{\yone}{60}
+\newcommand{\ytwo}{-700}
+
+\newcommand{\timestart}{XX. Monat 20XX}
+\newcommand{\timeend}{XX. Monat 20XX}
+\newcommand{\submissiontime}{DD. MM. 20XX}
+
+\begin{titlepage}
+  \begin{tikzpicture}[overlay]
+    \draw[color=gray] (\xone pt, \yone pt) -- (\xtwo pt, \yone pt)
+    arc (90:0:\diameter pt) -- (\xtwo pt + \diameter pt , \ytwo pt) -- (\xone pt + \diameter pt , \ytwo pt)
+    arc (270:180:\diameter pt)  -- (\xone pt, \yone pt);
+  \end{tikzpicture}
+
+  \begin{textblock}{10}[0,0](1.75,1.125)
+    \includegraphics[width=.3\textwidth]{bilder/Kitlogo_de_rgb.pdf}
+  \end{textblock}
+
+  \changefont{phv}{m}{n}	% helvetica
+  \vspace*{3.5cm}
+  \begin{center}
+    \Huge{Titel Zeile\\Zeile}\\
+    \vspace*{2cm}
+    \Large{Diplomarbeit\\von}\\
+    \vspace*{1cm}
+    \huge{\myname}\\
+    \vspace*{1cm}
+    \Large{An der Fakultät für Informatik\\Institut für Anthropomatik und Robotik\\Lehrstuhl Prof. Dr.-Ing. R. Dillmann}
+  \end{center}
+
+  \vspace*{1cm}
+  \Large{
+    \begin{center}
+      \begin{tabular}[ht]{l c l}
+        % Gutachter sind die Professoren, die die Arbeit bewerten. 
+        Erstgutachter: & \hfill  & Prof. Dr.-Ing. R. Dillmann\\
+        Zweitgutachter: & \hfill  & ???\\
+        Betreuender Mitarbeiter: & \hfill  & Dipl.-Inform. Sven R. Schmidt-Rohr\\
+      \end{tabular}
+    \end{center}
+  }
+
+  \begin{textblock}{10}[0,0](3,14)
+    \begin{center}
+      \large{Bearbeitungszeit: \timestart \hspace*{0.25cm} -- \hspace*{0.25cm} \timeend}
+    \end{center}
+  \end{textblock}
+
+  \begin{textblock}{10}[0,0](2,15.365)
+    \tiny{KIT -- Universität des Landes Baden-Württemberg und nationales Forschungszentrum der Helmholtz-Gesellschaft}
+  \end{textblock}
+
+  \begin{textblock}{10}[0,0](12.3,15.36)
+    \large{
+      \textbf{www.kit.edu}
+    }
+  \end{textblock}
+\end{titlepage}
