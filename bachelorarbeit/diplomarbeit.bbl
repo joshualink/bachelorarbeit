@@ -1,0 +1,26 @@
+\begin{thebibliography}{DSS93}
+  \providebibliographyfont{name}{}%
+  \providebibliographyfont{lastname}{}%
+  \providebibliographyfont{title}{\emph}%
+  \providebibliographyfont{jtitle}{\btxtitlefont}%
+  \providebibliographyfont{etal}{\emph}%
+  \providebibliographyfont{journal}{}%
+  \providebibliographyfont{volume}{}%
+  \providebibliographyfont{ISBN}{\MakeUppercase}%
+  \providebibliographyfont{ISSN}{\MakeUppercase}%
+  \providebibliographyfont{url}{\url}%
+  \providebibliographyfont{numeral}{}%
+  \expandafter\btxselectlanguage\expandafter {\btxfallbacklanguage}
+
+\expandafter\btxselectlanguage\expandafter {\btxfallbacklanguage}
+\bibitem [{DSS93}]{davis93}
+\btxnamefont {Randall \btxlastnamefont {Davis}}, \btxnamefont {Howard
+  \btxlastnamefont {Shrobe}}\btxandcomma {} \btxandlong {}\ \btxnamefont {Peter
+  \btxlastnamefont {Szolovits}}\btxauthorcolon\ \btxjtitlefont
+  {\btxifchangecase {What is a knowledge representation?}{What is a Knowledge
+  Representation?}}
+\newblock \btxjournalfont {AI Magazine}, 14(1):17--33, 1993.
+\newblock {\latintext
+  \btxurlfont{http://www.aaai.org/ojs/index.php/aimagazine/article/view/1029}}.
+
+\end{thebibliography}

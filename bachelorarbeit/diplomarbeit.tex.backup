@@ -1,0 +1,70 @@
+\documentclass{diplclass1}
+
+\newcommand{\myname}{Joshua Enrico Link}
+\newcommand{\mytitle}{Differenzbasierte Repräsentation räumlicher Relationen zur probabilisischen Szenenerkennung mittels hierarchischen Constellation Models}
+
+\hypersetup{
+ pdfauthor={\myname},
+ pdftitle={\mytitle},
+ pdfsubject={Not set},
+ pdfkeywords={Not set}
+}
+
+%% ---------------------------------
+%% | ToDo Marker - only for draft! |
+%% ---------------------------------
+% Remove this section for final version!
+\setlength{\marginparwidth}{20mm}
+
+\newcommand{\margtodo}
+{\marginpar{\textbf{\textcolor{red}{ToDo}}}{}}
+
+\newcommand{\todo}[1]
+{{\textbf{\textcolor{red}{(\margtodo{}#1)}}}{}}
+
+
+%% --------------------------------
+%% | Old Marker - only for draft! |
+%% --------------------------------
+% Remove this section for final version!
+\newenvironment{deprecated}
+{\begin{color}{gray}}
+{\end{color}}
+
+\begin{document}
+\frontmatter
+\pagenumbering{roman}
+\include{titelseite}
+\cleardoublepage
+\include{erklaerung}
+\cleardoublepage
+%%\include{danksagung}
+%%\cleardoublepage
+
+\tableofcontents
+\cleardoublepage
+
+\phantomsection
+\addcontentsline{toc}{chapter}{Abbildungsverzeichnis}
+\listoffigures
+\cleardoublepage
+
+%%\phantomsection
+%%\addcontentsline{toc}{chapter}{Abkürzungsverzeichnis}
+%%\include{00abkuerzungen}
+%%\cleardoublepage
+
+\mainmatter
+\pagenumbering{arabic}
+\include{01einleitung}
+\include{02motivation}
+\include{03grundlagen}
+\include{04konzept}
+\cleardoublepage
+
+\phantomsection
+\addcontentsline{toc}{chapter}{\bibname}
+\bibliographystyle{babalpha-fl}
+\bibliography{diplomarbeit}
+
+\end{document}

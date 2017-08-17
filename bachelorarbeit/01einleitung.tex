@@ -1,51 +1,17 @@
 \chapter{Einführung}\label{ch:einleitung}
 
-\todo{Inhalt}\\
+In der Robotik ist die Servicerobotik wohl der Forschungsbereich, welcher den größten Alltagsbezug für den Menschen hat, da er sich mit der Entwicklung und 
+Weiterentwicklung von autonomen Robotern beschäftigt, welche dem Menschen im Alltag assistieren,
+indem sie ihre Umwelt bewusst wahrnehmen und auf diese reagieren. Man findet mittlerweile Roboter im Privaten, die das Putzen, Staubsaugen oder Rasenmähen übernehmen,
+in der Industrie, bei Montage und Fertigung, sowie auch in der Medizin, als Pflegehilfe, Botengänger oder Assistent.\\
+
+Andere Einführung später damit sie nicht zu sehr der Einleitung von Joachim gleicht.\\
+Wie kommt man anders elegant auf das Teilgebiet der Object und Szenenerkennung\\
+Vielleicht ähnlich wie ich immer leuten meine Bachelorarbeit erkläre.\\
+Kontextverständnis?
+\\
 \begin{deprecated}
 \cite{davis93}
 
-A general comment about punning: Punning has been introduced to OWL 2 DL to
-allow for some greater flexibility in naming entities. Now you can give the
-same name to both an individual and a class or, if you like, to both a class
-and a property, and the ontology will still count as a valid OWL 2 DL
-ontology. This is, however, entirely a syntactic aspect. Semantically, the two
-equally named entities are completely unrelated. Citing the old Next Steps for
-OWL paper, which gave an overview about the original OWL 1.1 proposal, the
-forerunner of OWL 2 DL:
 
-OWL 1.1 uses a (weak) form of meta-modelling called punning. In punning, names
-can be used for several purposes; for example, Person can at the same time be
-the name of a class and the name of an individual. The different uses of a
-name are, however, completely independent, and from a semantic point of view
-they can be thought of as separate names, e.g., Person-the-Class and
-Person-the-Individual.
-
-So in your example, you cannot infer anything new from giving the same name to
-both a class and a property that you would not already receive from using
-distinct names for these entities. In particular, the two entities do /not/
-become equal by giving the same name to them. This would, in fact, be
-impossible, since in OWL DL a class represents a subset of the universe of
-discourse, while a property represents a binary relation over that universe -
-they are completely different kinds of entities.
-
-In addition, note that punning is new only for OWL 2 /DL/ and all the OWL 2 DL
-profiles. In OWL Full, just as in RDFS, it has always been possible to give
-the same name to entities from different entity types without any
-restriction. More, in OWL Full the same name always denotes the same thing,
-with the corresponding semantic consequences. This is so since in OWL Full,
-again as in RDFS and unlike OWL DL, classes and properties do not directly
-stand for sets and binary relations, but instead they are individuals with
-sets or binary relations associated to them. So, since classes and properties
-are actually individuals, they may become equal, and in fact do so when being
-equally named.
-
-However, in the specific case of your class/property example, you will not
-even get semantic consequences of the kind you ask for from OWL Full. The
-reason is that, while an individual can really have both a set and a binary
-relation associated to it (i.e., the individual can be both a class and a
-property), there will be no relationship between that set and that relation --
-quite similar as in the case of OWL 2 DL punning. For example, the individual
-can on the one hand be the empty class, while on the other hand it is a
-non-empty binary relation, e.g. by having a triple with the individual as its
-predicate in the ontology.
 \end{deprecated}
