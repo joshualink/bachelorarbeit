@@ -1,20 +1,21 @@
 \chapter{Motivation und Problemstellung}\label{ch:motivation}
 
 \section{Motivation}
+Wie schon in der Einführung erwähnt ist es elementar wichtig, dass man eine zuverlässige Szenenerkennung und ein gutes Kontextverständnis schafft um den Robotern die Möglichkeit zu bieten, sinnvoll mit ihrer Umwelt zu interagieren. Mit einer präzisen Wahrscheinlichkeitseinschätzung wie die momentane Umgebung beschaffen ist, lässt sich abschätzen welche Aufgaben es zu bewältigen und welche Probleme zu lösen gilt. Um dies zu gewährleisten muss man in das System möglichst viele Referenzdaten einspeisen, damit es jeden vorhanden Kontext erkennen kann. Szenen werden zu diesem Zweck aufgebaut un der Erkennung als neue Szene vorgestellt. Jede Szene die die Szenenerkennung auf diese Weise lernt, hilft das Chaos der sie umgebenen Objekte mehr und mehr zu interpretieren und einzuordnen. Natürlich könnte man das System auch dynamisch mit jedem auftreten eines Objekts neue Kontexte beziehungsweise Szenen lernen lassen, das würde allerdings die Erkennung an Präzision einbüßen lassen.\\
+Die Szenenerkennung nutzt also die Daten die sie zur Verfügung gestellt bekommt, bereits gelernte Szenen wiederzuerkennen. In dem bereits vorhandenen PSM(Probabilistic Scene Model)-System werden die Daten pro Szene zu einem Modell zusammengefasst, bei dem Auffällige Zusammenhänge berücksichtigt werden und scheinbar nicht miteinander in Verbindung stehende Objekte voneinander gelöst betrachtet werden. Dadurch gibt es Vorteile in der Laufzeit und möglicherweise auch eine signifikantere Erkennung, allerdings findet natürlich auch ein Informationsverlust statt, der zu Fehlern führen kann. In dieser Arbeit wird ein Ansatz getestet, der dichter an den erhaltenen Daten arbeitet.
 
+\begin{figure}
+	\centering
+	\includegraphics{bilder/relation.pdf}
+	\caption{Beispiel: Relative Position eines Objekts zu einem anderen}
+	\label{img:Relation}
+\end{figure}
 
-\section{Fokus der  Arbeit}
-
-
-
-\section{Brainstorming}
-
-Problem formulieren\\
-Anschaulisch Motivation\\
-Einschränkungen / Annahmen \\
-konkret:\\
-parametisches Modell ist ungenau - deshalb dichter an Daten\\
-datengetriebene Entwicklung \\
+\section{Fokus der Arbeit}
+1. datengetriebene Entwicklung \\
+2. Problem formulieren\\
+3. Einschränkungen / Annahmen \\
+4. parametisches Modell ist ungenau - deshalb dichter an Daten\\
 
 
 \begin{deprecated}
