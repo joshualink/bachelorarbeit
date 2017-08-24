@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.2.24)  23 AUG 2017 15:46
 entering extended mode
 **D:/Daten/bachelorarbeit/bachelorarbeit/diplomarbeit.tex
@@ -21,12 +22,50 @@ Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
 \KV@toks@=\toks14
 )
 (D:\Programme\MiKTeX\tex\latex\koma-script\scrlfile.sty
+=======
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.8.24)  24 AUG 2017 11:51
+entering extended mode
+**./diplomarbeit.tex
+(diplomarbeit.tex
+LaTeX2e <2017-04-15>
+Babel <3.10> and hyphenation patterns for 75 language(s) loaded.
+(diplclass1.cls
+Document Class: diplclass1 
+
+("C:\Users\linkjo\AppData\Local\Programs\MiKTeX 2.9\tex\latex\koma-script\scrbo
+ok.cls"
+Document Class: scrbook 2017/04/13 v3.23 KOMA-Script document class (book)
+
+("C:\Users\linkjo\AppData\Local\Programs\MiKTeX 2.9\tex\latex\koma-script\scrkb
+ase.sty"
+Package: scrkbase 2017/04/13 v3.23 KOMA-Script package (KOMA-Script-dependent b
+asics and keyval usage)
+
+("C:\Users\linkjo\AppData\Local\Programs\MiKTeX 2.9\tex\latex\koma-script\scrba
+se.sty"
+Package: scrbase 2017/04/13 v3.23 KOMA-Script package (KOMA-Script-independent 
+basics and keyval usage)
+
+("C:\Users\linkjo\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\keyval.s
+ty"
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks14
+)
+("C:\Users\linkjo\AppData\Local\Programs\MiKTeX 2.9\tex\latex\koma-script\scrlf
+ile.sty"
+>>>>>>> f655c011e773de6fc97f870bd34b9f8bdeb6bd24
 Package: scrlfile 2017/04/13 v3.23 KOMA-Script package (loading files)
 
 Package scrlfile, 2017/04/13 v3.23 KOMA-Script package (loading files)
                   Copyright (C) Markus Kohm
 
+<<<<<<< HEAD
 ))) (D:\Programme\MiKTeX\tex\latex\koma-script\tocbasic.sty
+=======
+)))
+("C:\Users\linkjo\AppData\Local\Programs\MiKTeX 2.9\tex\latex\koma-script\tocba
+sic.sty"
+>>>>>>> f655c011e773de6fc97f870bd34b9f8bdeb6bd24
 Package: tocbasic 2017/04/13 v3.23 KOMA-Script package (handling toc-files)
 \scr@dte@tocline@numberwidth=\skip41
 \scr@dte@tocline@numbox=\box26
@@ -57,11 +96,21 @@ Class scrbook Info: You've used standard option `oneside'.
 Class scrbook Info: File `scrsize11pt.clo' used to setup font sizes on input li
 ne 2275.
 
+<<<<<<< HEAD
 (D:\Programme\MiKTeX\tex\latex\koma-script\scrsize11pt.clo
 File: scrsize11pt.clo 2017/04/13 v3.23 KOMA-Script font size class option (11pt
 )
 )
 (D:\Programme\MiKTeX\tex\latex\koma-script\typearea.sty
+=======
+("C:\Users\linkjo\AppData\Local\Programs\MiKTeX 2.9\tex\latex\koma-script\scrsi
+ze11pt.clo"
+File: scrsize11pt.clo 2017/04/13 v3.23 KOMA-Script font size class option (11pt
+)
+)
+("C:\Users\linkjo\AppData\Local\Programs\MiKTeX 2.9\tex\latex\koma-script\typea
+rea.sty"
+>>>>>>> f655c011e773de6fc97f870bd34b9f8bdeb6bd24
 Package: typearea 2017/04/13 v3.23 KOMA-Script package (type area)
 \ta@bcor=\skip42
 \ta@div=\count79
@@ -110,11 +159,17 @@ LaTeX Info: Redefining \textsubscript on input line 4843.
 Class scrbook Info: Redefining `\numberline' on input line 6000.
 \bibindent=\dimen102
 )
+<<<<<<< HEAD
 (D:\Programme\MiKTeX\tex\generic\german\ngerman.sty v2.5e 1998-07-08
+=======
+("C:\Users\linkjo\AppData\Local\Programs\MiKTeX 2.9\tex\generic\german\ngerman.
+sty" v2.5e 1998-07-08
+>>>>>>> f655c011e773de6fc97f870bd34b9f8bdeb6bd24
 Package: ngerman 1998/07/08 v2.5e Support for writing german texts (br)
 \grmnU@D=\dimen103
 ngerman -- \language number for naustrian undefined, default 45 used.
 )
+<<<<<<< HEAD
 (D:\Programme\MiKTeX\tex\latex\base\fontenc.sty
 Package: fontenc 2017/01/24 v2.0c Standard LaTeX package
 
@@ -126,6 +181,18 @@ LaTeX Font Info:    Redeclaring font encoding T1 on input line 48.
 Package: ucs 2013/05/11 v2.2 UCS: Unicode input support
 
 (D:\Programme\MiKTeX\tex\latex\ucs\uni-global.def
+=======
+("C:\Users\linkjo\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\fontenc.sty"
+Package: fontenc 2017/04/05 v2.0i Standard LaTeX package
+("C:\Users\linkjo\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\t1enc.def"
+File: t1enc.def 2017/04/05 v2.0i Standard LaTeX file
+LaTeX Font Info:    Redeclaring font encoding T1 on input line 48.
+)) ("C:\Users\linkjo\AppData\Local\Programs\MiKTeX 2.9\tex\latex\ucs\ucs.sty"
+Package: ucs 2013/05/11 v2.2 UCS: Unicode input support
+
+("C:\Users\linkjo\AppData\Local\Programs\MiKTeX 2.9\tex\latex\ucs\uni-global.de
+f"
+>>>>>>> f655c011e773de6fc97f870bd34b9f8bdeb6bd24
 File: uni-global.def 2013/05/13 UCS: Unicode global data
 )
 \uc@secondtry=\count89
@@ -133,6 +200,7 @@ File: uni-global.def 2013/05/13 UCS: Unicode global data
 \uc@combtoksb=\toks16
 \uc@temptokena=\toks17
 )
+<<<<<<< HEAD
 (D:\Programme\MiKTeX\tex\latex\base\inputenc.sty
 Package: inputenc 2015/03/17 v1.2c Input encoding file
 \inpenc@prehook=\toks18
@@ -149,10 +217,27 @@ Package: fontenc 2017/01/24 v2.0c Standard LaTeX package
 
 (D:\Programme\MiKTeX\tex\latex\base\t1enc.def
 File: t1enc.def 2017/01/24 v2.0c Standard LaTeX file
+=======
+("C:\Users\linkjo\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\inputenc.sty
+"
+Package: inputenc 2015/03/17 v1.2c Input encoding file
+\inpenc@prehook=\toks18
+\inpenc@posthook=\toks19
+ ("C:\Users\linkjo\AppData\Local\Programs\MiKTeX 2.9\tex\latex\ucs\utf8x.def"
+File: utf8x.def 2004/10/17 UCS: Input encoding UTF-8
+)) ("C:\Users\linkjo\AppData\Local\Programs\MiKTeX 2.9\tex\latex\ae\ae.sty"
+Package: ae 2001/02/12 1.3 Almost European Computer Modern
+
+("C:\Users\linkjo\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\fontenc.sty"
+Package: fontenc 2017/04/05 v2.0i Standard LaTeX package
+("C:\Users\linkjo\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\t1enc.def"
+File: t1enc.def 2017/04/05 v2.0i Standard LaTeX file
+>>>>>>> f655c011e773de6fc97f870bd34b9f8bdeb6bd24
 LaTeX Font Info:    Redeclaring font encoding T1 on input line 48.
 )
 LaTeX Font Info:    Try loading font information for T1+aer on input line 105.
 
+<<<<<<< HEAD
 (D:\Programme\MiKTeX\tex\latex\ae\t1aer.fd
 File: t1aer.fd 1997/11/16 Font definitions for T1/aer.
 )))
@@ -166,10 +251,30 @@ Package: graphics 2016/10/09 v1.0u Standard LaTeX Graphics (DPC,SPQR)
 Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
 )
 (D:\Programme\MiKTeX\tex\latex\graphics-cfg\graphics.cfg
+=======
+("C:\Users\linkjo\AppData\Local\Programs\MiKTeX 2.9\tex\latex\ae\t1aer.fd"
+File: t1aer.fd 1997/11/16 Font definitions for T1/aer.
+)))
+("C:\Users\linkjo\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\graphicx
+.sty"
+Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
+
+("C:\Users\linkjo\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\graphics
+.sty"
+Package: graphics 2017/04/14 v1.1b Standard LaTeX Graphics (DPC,SPQR)
+
+("C:\Users\linkjo\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\trig.sty
+"
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+)
+("C:\Users\linkjo\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics-cfg\grap
+hics.cfg"
+>>>>>>> f655c011e773de6fc97f870bd34b9f8bdeb6bd24
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
 Package graphics Info: Driver file: pdftex.def on input line 99.
 
+<<<<<<< HEAD
 (D:\Programme\MiKTeX\tex\latex\graphics-def\pdftex.def
 File: pdftex.def 2017/01/12 v0.06k Graphics/color for pdfTeX
 
@@ -177,6 +282,18 @@ File: pdftex.def 2017/01/12 v0.06k Graphics/color for pdfTeX
 Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
 )
 (D:\Programme\MiKTeX\tex\generic\oberdiek\ltxcmds.sty
+=======
+("C:\Users\linkjo\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics-def\pdft
+ex.def"
+File: pdftex.def 2017/01/12 v0.06k Graphics/color for pdfTeX
+
+("C:\Users\linkjo\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\infwar
+err.sty"
+Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
+)
+("C:\Users\linkjo\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\ltxcmd
+s.sty"
+>>>>>>> f655c011e773de6fc97f870bd34b9f8bdeb6bd24
 Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
 )
 \Gread@gobject=\count90
@@ -192,7 +309,13 @@ Class scrbook Warning: Usage of package `fancyhdr' together
 (scrbook)              Nevertheless, using requested
 (scrbook)              package `fancyhdr' on input line 29.
 
+<<<<<<< HEAD
 (D:\Programme\MiKTeX\tex\latex\fancyhdr\fancyhdr.sty
+=======
+
+("C:\Users\linkjo\AppData\Local\Programs\MiKTeX 2.9\tex\latex\fancyhdr\fancyhdr
+.sty"
+>>>>>>> f655c011e773de6fc97f870bd34b9f8bdeb6bd24
 Package: fancyhdr 2017/06/30 v3.9a Extensive control of page headers and footer
 s
 \f@nch@headwidth=\skip56
@@ -205,7 +328,12 @@ s
 \f@nch@O@olf=\skip63
 \f@nch@O@orf=\skip64
 )
+<<<<<<< HEAD
 (D:\Programme\MiKTeX\tex\latex\subfigure\subfigure.sty
+=======
+("C:\Users\linkjo\AppData\Local\Programs\MiKTeX 2.9\tex\latex\subfigure\subfigu
+re.sty"
+>>>>>>> f655c011e773de6fc97f870bd34b9f8bdeb6bd24
 Package: subfigure 2002/07/30 v2.1.4 subfigure package
 \subfigtopskip=\skip65
 \subfigcapskip=\skip66
@@ -221,6 +349,7 @@ Package: subfigure 2002/07/30 v2.1.4 subfigure package
 ****************************************
 * Local config file subfigure.cfg used *
 ****************************************
+<<<<<<< HEAD
 (D:\Programme\MiKTeX\tex\latex\subfigure\subfigure.cfg)
 \subfig@top=\skip69
 \subfig@bottom=\skip70
@@ -230,6 +359,20 @@ Package: textpos 2016/06/07 v1.8
 
 Package: textpos 2016/06/07 1.8, absolute positioning of text on the page
 (D:\Programme\MiKTeX\tex\latex\ms\everyshi.sty
+=======
+
+("C:\Users\linkjo\AppData\Local\Programs\MiKTeX 2.9\tex\latex\subfigure\subfigu
+re.cfg")
+\subfig@top=\skip69
+\subfig@bottom=\skip70
+)
+("C:\Users\linkjo\AppData\Local\Programs\MiKTeX 2.9\tex\latex\textpos\textpos.s
+ty"
+Package: textpos 2016/06/07 v1.8
+
+Package: textpos 2016/06/07 1.8, absolute positioning of text on the page
+("C:\Users\linkjo\AppData\Local\Programs\MiKTeX 2.9\tex\latex\ms\everyshi.sty"
+>>>>>>> f655c011e773de6fc97f870bd34b9f8bdeb6bd24
 Package: everyshi 2001/05/15 v3.00 EveryShipout Package (MS)
 )
 \TP@textbox=\box28
@@ -238,7 +381,6 @@ Package: everyshi 2001/05/15 v3.00 EveryShipout Package (MS)
 \TPVertModule=\dimen109
 \TP@margin=\dimen110
 \TP@absmargin=\dimen111
-
 Grid set 16 x 16 = 37.34424pt x 52.81543pt
 \TPboxrulesize=\dimen112
 \TP@ox=\dimen113
@@ -246,6 +388,7 @@ Grid set 16 x 16 = 37.34424pt x 52.81543pt
 \TP@tbargs=\toks20
 \TP@prevdepth=\dimen115
 TextBlockOrigin set to 0pt x 0pt
+<<<<<<< HEAD
 ) (D:\Programme\MiKTeX\tex\latex\pgf\frontendlayer\tikz.sty
 (D:\Programme\MiKTeX\tex\latex\pgf\basiclayer\pgf.sty
 (D:\Programme\MiKTeX\tex\latex\pgf\utilities\pgfrcs.sty
@@ -259,10 +402,34 @@ TextBlockOrigin set to 0pt x 0pt
 \pgfutil@abb=\box30
 )
 (D:\Programme\MiKTeX\tex\generic\pgf\utilities\pgfrcs.code.tex
+=======
+)
+("C:\Users\linkjo\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pgf\frontendlayer
+\tikz.sty"
+("C:\Users\linkjo\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pgf\basiclayer\pg
+f.sty"
+("C:\Users\linkjo\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pgf\utilities\pgf
+rcs.sty"
+("C:\Users\linkjo\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\utilities\p
+gfutil-common.tex"
+\pgfutil@everybye=\toks21
+\pgfutil@tempdima=\dimen116
+\pgfutil@tempdimb=\dimen117
+
+("C:\Users\linkjo\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\utilities\p
+gfutil-common-lists.tex"))
+("C:\Users\linkjo\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\utilities\p
+gfutil-latex.def"
+\pgfutil@abb=\box30
+)
+("C:\Users\linkjo\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\utilities\p
+gfrcs.code.tex"
+>>>>>>> f655c011e773de6fc97f870bd34b9f8bdeb6bd24
 Package: pgfrcs 2015/08/07 v3.0.1a (rcs-revision 1.31)
 ))
 Package: pgf 2015/08/07 v3.0.1a (rcs-revision 1.15)
 
+<<<<<<< HEAD
 (D:\Programme\MiKTeX\tex\latex\pgf\basiclayer\pgfcore.sty
 (D:\Programme\MiKTeX\tex\latex\pgf\systemlayer\pgfsys.sty
 (D:\Programme\MiKTeX\tex\generic\pgf\systemlayer\pgfsys.code.tex
@@ -273,6 +440,23 @@ Package: pgfsys 2014/07/09 v3.0.1a (rcs-revision 1.48)
 \pgfkeys@temptoks=\toks23
 
 (D:\Programme\MiKTeX\tex\generic\pgf\utilities\pgfkeysfiltered.code.tex
+=======
+("C:\Users\linkjo\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pgf\basiclayer\pg
+fcore.sty"
+("C:\Users\linkjo\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pgf\systemlayer\p
+gfsys.sty"
+("C:\Users\linkjo\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\systemlayer
+\pgfsys.code.tex"
+Package: pgfsys 2014/07/09 v3.0.1a (rcs-revision 1.48)
+
+("C:\Users\linkjo\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\utilities\p
+gfkeys.code.tex"
+\pgfkeys@pathtoks=\toks22
+\pgfkeys@temptoks=\toks23
+
+("C:\Users\linkjo\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\utilities\p
+gfkeysfiltered.code.tex"
+>>>>>>> f655c011e773de6fc97f870bd34b9f8bdeb6bd24
 \pgfkeys@tmptoks=\toks24
 ))
 \pgf@x=\dimen118
@@ -293,11 +477,17 @@ Package: pgfsys 2014/07/09 v3.0.1a (rcs-revision 1.48)
 \t@pgf@tokb=\toks26
 \t@pgf@tokc=\toks27
 
+<<<<<<< HEAD
 (D:\Programme\MiKTeX\tex\generic\pgf\systemlayer\pgf.cfg
+=======
+("C:\Users\linkjo\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\systemlayer
+\pgf.cfg"
+>>>>>>> f655c011e773de6fc97f870bd34b9f8bdeb6bd24
 File: pgf.cfg 2008/05/14  (rcs-revision 1.7)
 )
 Driver file for pgf: pgfsys-pdftex.def
 
+<<<<<<< HEAD
 (D:\Programme\MiKTeX\tex\generic\pgf\systemlayer\pgfsys-pdftex.def
 File: pgfsys-pdftex.def 2014/10/11  (rcs-revision 1.35)
 
@@ -305,10 +495,23 @@ File: pgfsys-pdftex.def 2014/10/11  (rcs-revision 1.35)
 File: pgfsys-common-pdf.def 2013/10/10  (rcs-revision 1.13)
 )))
 (D:\Programme\MiKTeX\tex\generic\pgf\systemlayer\pgfsyssoftpath.code.tex
+=======
+("C:\Users\linkjo\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\systemlayer
+\pgfsys-pdftex.def"
+File: pgfsys-pdftex.def 2014/10/11  (rcs-revision 1.35)
+
+("C:\Users\linkjo\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\systemlayer
+\pgfsys-common-pdf.def"
+File: pgfsys-common-pdf.def 2013/10/10  (rcs-revision 1.13)
+)))
+("C:\Users\linkjo\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\systemlayer
+\pgfsyssoftpath.code.tex"
+>>>>>>> f655c011e773de6fc97f870bd34b9f8bdeb6bd24
 File: pgfsyssoftpath.code.tex 2013/09/09  (rcs-revision 1.9)
 \pgfsyssoftpath@smallbuffer@items=\count99
 \pgfsyssoftpath@bigbuffer@items=\count100
 )
+<<<<<<< HEAD
 (D:\Programme\MiKTeX\tex\generic\pgf\systemlayer\pgfsysprotocol.code.tex
 File: pgfsysprotocol.code.tex 2006/10/16  (rcs-revision 1.4)
 ))
@@ -316,6 +519,18 @@ File: pgfsysprotocol.code.tex 2006/10/16  (rcs-revision 1.4)
 Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
 
 (D:\Programme\MiKTeX\tex\latex\graphics-cfg\color.cfg
+=======
+("C:\Users\linkjo\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\systemlayer
+\pgfsysprotocol.code.tex"
+File: pgfsysprotocol.code.tex 2006/10/16  (rcs-revision 1.4)
+))
+("C:\Users\linkjo\AppData\Local\Programs\MiKTeX 2.9\tex\latex\xcolor\xcolor.sty
+"
+Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
+
+("C:\Users\linkjo\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics-cfg\colo
+r.cfg"
+>>>>>>> f655c011e773de6fc97f870bd34b9f8bdeb6bd24
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package xcolor Info: Driver file: pdftex.def on input line 225.
@@ -329,6 +544,7 @@ Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
 Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
 )
+<<<<<<< HEAD
 (D:\Programme\MiKTeX\tex\generic\pgf\basiclayer\pgfcore.code.tex
 Package: pgfcore 2010/04/11 v3.0.1a (rcs-revision 1.7)
 
@@ -336,6 +552,20 @@ Package: pgfcore 2010/04/11 v3.0.1a (rcs-revision 1.7)
 (D:\Programme\MiKTeX\tex\generic\pgf\math\pgfmathcalc.code.tex
 (D:\Programme\MiKTeX\tex\generic\pgf\math\pgfmathutil.code.tex)
 (D:\Programme\MiKTeX\tex\generic\pgf\math\pgfmathparser.code.tex
+=======
+("C:\Users\linkjo\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\
+pgfcore.code.tex"
+Package: pgfcore 2010/04/11 v3.0.1a (rcs-revision 1.7)
+
+("C:\Users\linkjo\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pgfmat
+h.code.tex"
+("C:\Users\linkjo\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pgfmat
+hcalc.code.tex"
+("C:\Users\linkjo\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pgfmat
+hutil.code.tex")
+("C:\Users\linkjo\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pgfmat
+hparser.code.tex"
+>>>>>>> f655c011e773de6fc97f870bd34b9f8bdeb6bd24
 \pgfmath@dimen=\dimen126
 \pgfmath@count=\count101
 \pgfmath@box=\box31
@@ -343,6 +573,7 @@ Package: pgfcore 2010/04/11 v3.0.1a (rcs-revision 1.7)
 \pgfmath@stack@operand=\toks29
 \pgfmath@stack@operation=\toks30
 )
+<<<<<<< HEAD
 (D:\Programme\MiKTeX\tex\generic\pgf\math\pgfmathfunctions.code.tex
 (D:\Programme\MiKTeX\tex\generic\pgf\math\pgfmathfunctions.basic.code.tex)
 (D:\Programme\MiKTeX\tex\generic\pgf\math\pgfmathfunctions.trigonometric.code.t
@@ -356,6 +587,32 @@ ode.tex))) (D:\Programme\MiKTeX\tex\generic\pgf\math\pgfmathfloat.code.tex
 \c@pgfmathroundto@lastzeros=\count102
 ))
 (D:\Programme\MiKTeX\tex\generic\pgf\basiclayer\pgfcorepoints.code.tex
+=======
+("C:\Users\linkjo\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pgfmat
+hfunctions.code.tex"
+("C:\Users\linkjo\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pgfmat
+hfunctions.basic.code.tex")
+("C:\Users\linkjo\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pgfmat
+hfunctions.trigonometric.code.tex")
+("C:\Users\linkjo\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pgfmat
+hfunctions.random.code.tex")
+("C:\Users\linkjo\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pgfmat
+hfunctions.comparison.code.tex")
+("C:\Users\linkjo\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pgfmat
+hfunctions.base.code.tex")
+("C:\Users\linkjo\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pgfmat
+hfunctions.round.code.tex")
+("C:\Users\linkjo\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pgfmat
+hfunctions.misc.code.tex")
+("C:\Users\linkjo\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pgfmat
+hfunctions.integerarithmetics.code.tex")))
+("C:\Users\linkjo\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pgfmat
+hfloat.code.tex"
+\c@pgfmathroundto@lastzeros=\count102
+))
+("C:\Users\linkjo\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\
+pgfcorepoints.code.tex"
+>>>>>>> f655c011e773de6fc97f870bd34b9f8bdeb6bd24
 File: pgfcorepoints.code.tex 2013/10/07  (rcs-revision 1.27)
 \pgf@picminx=\dimen127
 \pgf@picmaxx=\dimen128
@@ -372,23 +629,39 @@ File: pgfcorepoints.code.tex 2013/10/07  (rcs-revision 1.27)
 \pgf@zx=\dimen139
 \pgf@zy=\dimen140
 )
+<<<<<<< HEAD
 (D:\Programme\MiKTeX\tex\generic\pgf\basiclayer\pgfcorepathconstruct.code.tex
+=======
+("C:\Users\linkjo\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\
+pgfcorepathconstruct.code.tex"
+>>>>>>> f655c011e773de6fc97f870bd34b9f8bdeb6bd24
 File: pgfcorepathconstruct.code.tex 2013/10/07  (rcs-revision 1.29)
 \pgf@path@lastx=\dimen141
 \pgf@path@lasty=\dimen142
 )
+<<<<<<< HEAD
 (D:\Programme\MiKTeX\tex\generic\pgf\basiclayer\pgfcorepathusage.code.tex
+=======
+("C:\Users\linkjo\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\
+pgfcorepathusage.code.tex"
+>>>>>>> f655c011e773de6fc97f870bd34b9f8bdeb6bd24
 File: pgfcorepathusage.code.tex 2014/11/02  (rcs-revision 1.24)
 \pgf@shorten@end@additional=\dimen143
 \pgf@shorten@start@additional=\dimen144
 )
+<<<<<<< HEAD
 (D:\Programme\MiKTeX\tex\generic\pgf\basiclayer\pgfcorescopes.code.tex
+=======
+("C:\Users\linkjo\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\
+pgfcorescopes.code.tex"
+>>>>>>> f655c011e773de6fc97f870bd34b9f8bdeb6bd24
 File: pgfcorescopes.code.tex 2015/05/08  (rcs-revision 1.46)
 \pgfpic=\box32
 \pgf@hbox=\box33
 \pgf@layerbox@main=\box34
 \pgf@picture@serial@count=\count103
 )
+<<<<<<< HEAD
 (D:\Programme\MiKTeX\tex\generic\pgf\basiclayer\pgfcoregraphicstate.code.tex
 File: pgfcoregraphicstate.code.tex 2014/11/02  (rcs-revision 1.12)
 \pgflinewidth=\dimen145
@@ -411,10 +684,44 @@ File: pgfcorearrows.code.tex 2015/05/14  (rcs-revision 1.43)
 \pgfarrowsep=\dimen149
 )
 (D:\Programme\MiKTeX\tex\generic\pgf\basiclayer\pgfcoreshade.code.tex
+=======
+("C:\Users\linkjo\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\
+pgfcoregraphicstate.code.tex"
+File: pgfcoregraphicstate.code.tex 2014/11/02  (rcs-revision 1.12)
+\pgflinewidth=\dimen145
+)
+("C:\Users\linkjo\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\
+pgfcoretransformations.code.tex"
+File: pgfcoretransformations.code.tex 2015/08/07  (rcs-revision 1.20)
+\pgf@pt@x=\dimen146
+\pgf@pt@y=\dimen147
+\pgf@pt@temp=\dimen148
+)
+("C:\Users\linkjo\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\
+pgfcorequick.code.tex"
+File: pgfcorequick.code.tex 2008/10/09  (rcs-revision 1.3)
+)
+("C:\Users\linkjo\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\
+pgfcoreobjects.code.tex"
+File: pgfcoreobjects.code.tex 2006/10/11  (rcs-revision 1.2)
+)
+("C:\Users\linkjo\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\
+pgfcorepathprocessing.code.tex"
+File: pgfcorepathprocessing.code.tex 2013/09/09  (rcs-revision 1.9)
+)
+("C:\Users\linkjo\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\
+pgfcorearrows.code.tex"
+File: pgfcorearrows.code.tex 2015/05/14  (rcs-revision 1.43)
+\pgfarrowsep=\dimen149
+)
+("C:\Users\linkjo\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\
+pgfcoreshade.code.tex"
+>>>>>>> f655c011e773de6fc97f870bd34b9f8bdeb6bd24
 File: pgfcoreshade.code.tex 2013/07/15  (rcs-revision 1.15)
 \pgf@max=\dimen150
 \pgf@sys@shading@range@num=\count104
 )
+<<<<<<< HEAD
 (D:\Programme\MiKTeX\tex\generic\pgf\basiclayer\pgfcoreimage.code.tex
 File: pgfcoreimage.code.tex 2013/07/15  (rcs-revision 1.18)
 
@@ -439,10 +746,45 @@ File: pgfmoduleshapes.code.tex 2014/03/21  (rcs-revision 1.35)
 File: pgfmoduleplot.code.tex 2015/08/03  (rcs-revision 1.13)
 )
 (D:\Programme\MiKTeX\tex\latex\pgf\compatibility\pgfcomp-version-0-65.sty
+=======
+("C:\Users\linkjo\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\
+pgfcoreimage.code.tex"
+File: pgfcoreimage.code.tex 2013/07/15  (rcs-revision 1.18)
+
+("C:\Users\linkjo\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\
+pgfcoreexternal.code.tex"
+File: pgfcoreexternal.code.tex 2014/07/09  (rcs-revision 1.21)
+\pgfexternal@startupbox=\box35
+))
+("C:\Users\linkjo\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\
+pgfcorelayers.code.tex"
+File: pgfcorelayers.code.tex 2013/07/18  (rcs-revision 1.7)
+)
+("C:\Users\linkjo\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\
+pgfcoretransparency.code.tex"
+File: pgfcoretransparency.code.tex 2013/09/30  (rcs-revision 1.5)
+)
+("C:\Users\linkjo\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\
+pgfcorepatterns.code.tex"
+File: pgfcorepatterns.code.tex 2013/11/07  (rcs-revision 1.5)
+)))
+("C:\Users\linkjo\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\modules\pgf
+moduleshapes.code.tex"
+File: pgfmoduleshapes.code.tex 2014/03/21  (rcs-revision 1.35)
+\pgfnodeparttextbox=\box36
+)
+("C:\Users\linkjo\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\modules\pgf
+moduleplot.code.tex"
+File: pgfmoduleplot.code.tex 2015/08/03  (rcs-revision 1.13)
+)
+("C:\Users\linkjo\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pgf\compatibility
+\pgfcomp-version-0-65.sty"
+>>>>>>> f655c011e773de6fc97f870bd34b9f8bdeb6bd24
 Package: pgfcomp-version-0-65 2007/07/03 v3.0.1a (rcs-revision 1.7)
 \pgf@nodesepstart=\dimen151
 \pgf@nodesepend=\dimen152
 )
+<<<<<<< HEAD
 (D:\Programme\MiKTeX\tex\latex\pgf\compatibility\pgfcomp-version-1-18.sty
 Package: pgfcomp-version-1-18 2007/07/23 v3.0.1a (rcs-revision 1.1)
 ))
@@ -455,15 +797,46 @@ Package: pgfcomp-version-1-18 2007/07/23 v3.0.1a (rcs-revision 1.1)
 Package: pgffor 2013/12/13 v3.0.1a (rcs-revision 1.25)
 
 (D:\Programme\MiKTeX\tex\generic\pgf\math\pgfmath.code.tex)
+=======
+("C:\Users\linkjo\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pgf\compatibility
+\pgfcomp-version-1-18.sty"
+Package: pgfcomp-version-1-18 2007/07/23 v3.0.1a (rcs-revision 1.1)
+))
+("C:\Users\linkjo\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pgf\utilities\pgf
+for.sty"
+("C:\Users\linkjo\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pgf\utilities\pgf
+keys.sty"
+("C:\Users\linkjo\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\utilities\p
+gfkeys.code.tex"))
+("C:\Users\linkjo\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pgf\math\pgfmath.
+sty"
+("C:\Users\linkjo\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pgfmat
+h.code.tex"))
+("C:\Users\linkjo\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\utilities\p
+gffor.code.tex"
+Package: pgffor 2013/12/13 v3.0.1a (rcs-revision 1.25)
+
+("C:\Users\linkjo\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pgfmat
+h.code.tex")
+>>>>>>> f655c011e773de6fc97f870bd34b9f8bdeb6bd24
 \pgffor@iter=\dimen153
 \pgffor@skip=\dimen154
 \pgffor@stack=\toks31
 \pgffor@toks=\toks32
 ))
+<<<<<<< HEAD
 (D:\Programme\MiKTeX\tex\generic\pgf\frontendlayer\tikz\tikz.code.tex
 Package: tikz 2015/08/07 v3.0.1a (rcs-revision 1.151)
 
 (D:\Programme\MiKTeX\tex\generic\pgf\libraries\pgflibraryplothandlers.code.tex
+=======
+("C:\Users\linkjo\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\frontendlay
+er\tikz\tikz.code.tex"
+Package: tikz 2015/08/07 v3.0.1a (rcs-revision 1.151)
+
+("C:\Users\linkjo\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\libraries\p
+gflibraryplothandlers.code.tex"
+>>>>>>> f655c011e773de6fc97f870bd34b9f8bdeb6bd24
 File: pgflibraryplothandlers.code.tex 2013/08/31 v3.0.1a (rcs-revision 1.20)
 \pgf@plot@mark@count=\count105
 \pgfplotmarksize=\dimen155
@@ -482,7 +855,13 @@ File: pgflibraryplothandlers.code.tex 2013/08/31 v3.0.1a (rcs-revision 1.20)
 \tikznumberofchildren=\count107
 \tikznumberofcurrentchild=\count108
 \tikz@fig@count=\count109
+<<<<<<< HEAD
 (D:\Programme\MiKTeX\tex\generic\pgf\modules\pgfmodulematrix.code.tex
+=======
+
+("C:\Users\linkjo\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\modules\pgf
+modulematrix.code.tex"
+>>>>>>> f655c011e773de6fc97f870bd34b9f8bdeb6bd24
 File: pgfmodulematrix.code.tex 2013/09/17  (rcs-revision 1.8)
 \pgfmatrixcurrentrow=\count110
 \pgfmatrixcurrentcolumn=\count111
@@ -490,6 +869,7 @@ File: pgfmodulematrix.code.tex 2013/09/17  (rcs-revision 1.8)
 )
 \tikz@expandcount=\count113
 
+<<<<<<< HEAD
 (D:\Programme\MiKTeX\tex\generic\pgf\frontendlayer\tikz\libraries\tikzlibraryto
 paths.code.tex
 File: tikzlibrarytopaths.code.tex 2008/06/17 v3.0.1a (rcs-revision 1.2)
@@ -523,6 +903,50 @@ Package: hobsub-hyperref 2016/05/16 v1.14 Bundle oberdiek, subset hyperref (HO)
 
 
 (D:\Programme\MiKTeX\tex\generic\oberdiek\hobsub-generic.sty
+=======
+("C:\Users\linkjo\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\frontendlay
+er\tikz\libraries\tikzlibrarytopaths.code.tex"
+File: tikzlibrarytopaths.code.tex 2008/06/17 v3.0.1a (rcs-revision 1.2)
+)))
+("C:\Users\linkjo\AppData\Local\Programs\MiKTeX 2.9\tex\generic\babel\babel.sty
+"
+Package: babel 2017/05/19 3.10 The Babel package
+
+*************************************
+* Local config file bblopts.cfg used
+*
+("C:\Users\linkjo\AppData\Local\Programs\MiKTeX 2.9\tex\latex\arabi\bblopts.cfg
+"
+File: bblopts.cfg 2005/09/08 v0.1 add Arabic and Farsi to \errhelp {Use `` for 
+a simple double quote character.}\errmessage {ngerman: The command "d is undefi
+ned}``declaredöptions of babel
+)
+("C:\Users\linkjo\AppData\Local\Programs\MiKTeX 2.9\tex\latex\babel-german\nger
+man.ldf"
+Language: ngerman 2016/11/02 v2.9 German support for babel (new orthography)
+
+("C:\Users\linkjo\AppData\Local\Programs\MiKTeX 2.9\tex\latex\babel-german\nger
+manb.ldf"
+Language: ngermanb 2016/11/02 v2.9 German support for babel (new orthography)
+
+("C:\Users\linkjo\AppData\Local\Programs\MiKTeX 2.9\tex\generic\babel\babel.def
+"
+File: babel.def 2017/05/19 3.10 Babel common definitions
+\babel@savecnt=\count114
+\U@D=\dimen162
+))))
+("C:\Users\linkjo\AppData\Local\Programs\MiKTeX 2.9\tex\latex\hyperref\hyperref
+.sty"
+Package: hyperref 2017/03/14 v6.85a Hypertext links for LaTeX
+
+("C:\Users\linkjo\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\hobsub
+-hyperref.sty"
+Package: hobsub-hyperref 2016/05/16 v1.14 Bundle oberdiek, subset hyperref (HO)
+
+
+("C:\Users\linkjo\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\hobsub
+-generic.sty"
+>>>>>>> f655c011e773de6fc97f870bd34b9f8bdeb6bd24
 Package: hobsub-generic 2016/05/16 v1.14 Bundle oberdiek, subset generic (HO)
 Package: hobsub 2016/05/16 v1.14 Construct package bundles (HO)
 Package hobsub Info: Skipping package `infwarerr' (already loaded).
@@ -532,7 +956,11 @@ Package ifluatex Info: LuaTeX not detected.
 Package: ifvtex 2016/05/16 v1.6 Detect VTeX and its facilities (HO)
 Package ifvtex Info: VTeX not detected.
 Package: intcalc 2016/05/16 v1.2 Expandable calculations with integers (HO)
+<<<<<<< HEAD
 Package: ifpdf 2016/05/14 v3.1 Provides the ifpdf switch
+=======
+Package: ifpdf 2017/03/15 v3.2 Provides the ifpdf switch
+>>>>>>> f655c011e773de6fc97f870bd34b9f8bdeb6bd24
 Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
 Package etexcmds Info: Could not find \expanded.
 (etexcmds)             That can mean that you are not using pdfTeX 1.50 or
@@ -540,7 +968,11 @@ Package etexcmds Info: Could not find \expanded.
 (etexcmds)             In the latter case, load this package earlier.
 Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
 Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
+<<<<<<< HEAD
 Package: pdftexcmds 2016/05/21 v0.22 Utility functions of pdfTeX for LuaTeX (HO
+=======
+Package: pdftexcmds 2017/03/19 v0.25 Utility functions of pdfTeX for LuaTeX (HO
+>>>>>>> f655c011e773de6fc97f870bd34b9f8bdeb6bd24
 )
 Package pdftexcmds Info: LuaTeX not detected.
 Package pdftexcmds Info: \pdf@primitive is available.
@@ -562,6 +994,7 @@ Package: atbegshi 2016/06/09 v1.18 At begin shipout hook (HO)
 Package: refcount 2016/05/16 v3.5 Data extraction from label references (HO)
 Package: hycolor 2016/05/16 v1.8 Color options for hyperref/bookmark (HO)
 )
+<<<<<<< HEAD
 (D:\Programme\MiKTeX\tex\generic\ifxetex\ifxetex.sty
 Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 )
@@ -569,12 +1002,25 @@ Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 Package: auxhook 2016/05/16 v1.4 Hooks for auxiliary files (HO)
 )
 (D:\Programme\MiKTeX\tex\latex\oberdiek\kvoptions.sty
+=======
+("C:\Users\linkjo\AppData\Local\Programs\MiKTeX 2.9\tex\generic\ifxetex\ifxetex
+.sty"
+Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
+)
+("C:\Users\linkjo\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\auxhook.
+sty"
+Package: auxhook 2016/05/16 v1.4 Hooks for auxiliary files (HO)
+)
+("C:\Users\linkjo\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\kvoption
+s.sty"
+>>>>>>> f655c011e773de6fc97f870bd34b9f8bdeb6bd24
 Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
 )
 \@linkdim=\dimen163
 \Hy@linkcounter=\count115
 \Hy@pagecounter=\count116
 
+<<<<<<< HEAD
 (D:\Programme\MiKTeX\tex\latex\hyperref\pd1enc.def
 File: pd1enc.def 2016/06/24 v6.83q Hyperref: PDFDocEncoding definition (HO)
 )
@@ -606,10 +1052,45 @@ Package hyperref Info: Bookmarks ON on input line 4735.
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
 LaTeX Info: Redefining \url on input line 5088.
+=======
+("C:\Users\linkjo\AppData\Local\Programs\MiKTeX 2.9\tex\latex\hyperref\pd1enc.d
+ef"
+File: pd1enc.def 2017/03/14 v6.85a Hyperref: PDFDocEncoding definition (HO)
+)
+\Hy@SavedSpaceFactor=\count117
+
+("C:\Users\linkjo\AppData\Local\Programs\MiKTeX 2.9\tex\latex\00miktex\hyperref
+.cfg"
+File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
+)
+Package hyperref Info: Option `raiselinks' set `true' on input line 4374.
+Package hyperref Info: Option `bookmarks' set `true' on input line 4374.
+Package hyperref Info: Option `bookmarksopen' set `true' on input line 4374.
+Package hyperref Info: Option `bookmarksnumbered' set `true' on input line 4374
+.
+Package hyperref Info: Option `hyperindex' set `true' on input line 4374.
+Package hyperref Info: Option `plainpages' set `false' on input line 4374.
+Package hyperref Info: Option `pdfpagelabels' set `true' on input line 4374.
+Package hyperref Info: Option `colorlinks' set `false' on input line 4374.
+Package hyperref Info: Hyper figures OFF on input line 4498.
+Package hyperref Info: Link nesting OFF on input line 4503.
+Package hyperref Info: Hyper index ON on input line 4506.
+Package hyperref Info: Plain pages OFF on input line 4513.
+Package hyperref Info: Backreferencing OFF on input line 4518.
+Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+Package hyperref Info: Bookmarks ON on input line 4751.
+\c@Hy@tempcnt=\count118
+ ("C:\Users\linkjo\AppData\Local\Programs\MiKTeX 2.9\tex\latex\url\url.sty"
+\Urlmuskip=\muskip10
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+LaTeX Info: Redefining \url on input line 5104.
+>>>>>>> f655c011e773de6fc97f870bd34b9f8bdeb6bd24
 \XeTeXLinkMargin=\dimen164
 \Fld@menulength=\count119
 \Field@Width=\dimen165
 \Fld@charsize=\dimen166
+<<<<<<< HEAD
 Package hyperref Info: Hyper figures OFF on input line 6342.
 Package hyperref Info: Link nesting OFF on input line 6347.
 Package hyperref Info: Hyper index ON on input line 6350.
@@ -619,6 +1100,17 @@ Package hyperref Info: Link coloring with OCG OFF on input line 6367.
 Package hyperref Info: PDF/A mode OFF on input line 6372.
 LaTeX Info: Redefining \ref on input line 6412.
 LaTeX Info: Redefining \pageref on input line 6416.
+=======
+Package hyperref Info: Hyper figures OFF on input line 6358.
+Package hyperref Info: Link nesting OFF on input line 6363.
+Package hyperref Info: Hyper index ON on input line 6366.
+Package hyperref Info: backreferencing OFF on input line 6373.
+Package hyperref Info: Link coloring OFF on input line 6378.
+Package hyperref Info: Link coloring with OCG OFF on input line 6383.
+Package hyperref Info: PDF/A mode OFF on input line 6388.
+LaTeX Info: Redefining \ref on input line 6428.
+LaTeX Info: Redefining \pageref on input line 6432.
+>>>>>>> f655c011e773de6fc97f870bd34b9f8bdeb6bd24
 \Hy@abspage=\count120
 \c@Item=\count121
 \c@Hfootnote=\count122
@@ -626,19 +1118,36 @@ LaTeX Info: Redefining \pageref on input line 6416.
 
 Package hyperref Message: Driver (autodetected): hpdftex.
 
+<<<<<<< HEAD
 (D:\Programme\MiKTeX\tex\latex\hyperref\hpdftex.def
 File: hpdftex.def 2016/06/24 v6.83q Hyperref driver for pdfTeX
 \Fld@listcount=\count123
 \c@bookmark@seq@number=\count124
 
 (D:\Programme\MiKTeX\tex\latex\oberdiek\rerunfilecheck.sty
+=======
+
+("C:\Users\linkjo\AppData\Local\Programs\MiKTeX 2.9\tex\latex\hyperref\hpdftex.
+def"
+File: hpdftex.def 2017/03/14 v6.85a Hyperref driver for pdfTeX
+\Fld@listcount=\count123
+\c@bookmark@seq@number=\count124
+
+("C:\Users\linkjo\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\rerunfil
+echeck.sty"
+>>>>>>> f655c011e773de6fc97f870bd34b9f8bdeb6bd24
 Package: rerunfilecheck 2016/05/16 v1.8 Rerun checks for auxiliary files (HO)
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 82.
 )
 \Hy@SectionHShift=\skip71
 )
+<<<<<<< HEAD
 (D:\Programme\MiKTeX\tex\latex\babelbib\babelbib.sty
+=======
+("C:\Users\linkjo\AppData\Local\Programs\MiKTeX 2.9\tex\latex\babelbib\babelbib
+.sty"
+>>>>>>> f655c011e773de6fc97f870bd34b9f8bdeb6bd24
 Package: babelbib 2012/01/03 v1.31 babelbib: multilingual bibliographies (HH)
 \c@btxromaniannumeral=\count125
 )
@@ -653,6 +1162,7 @@ less on input line 93.
 \chapnolen=\skip72
 \chapparlen=\skip73
 \chapno=\box41
+<<<<<<< HEAD
 ) (D:\Programme\MiKTeX\tex\latex\ucs\uni-0.def
 File: uni-0.def 2013/05/13 UCS: Unicode data U+0000..U+00FF
 )
@@ -666,6 +1176,11 @@ File: uni-0.def 2013/05/13 UCS: Unicode data U+0000..U+00FF
 (D:/Daten/bachelorarbeit/bachelorarbeit\05implementierung.aux)
 (D:/Daten/bachelorarbeit/bachelorarbeit\06evaluation.aux)
 (D:/Daten/bachelorarbeit/bachelorarbeit\07zusammenfassung.aux))
+=======
+) ("C:\Users\linkjo\AppData\Local\Programs\MiKTeX 2.9\tex\latex\ucs\uni-0.def"
+File: uni-0.def 2013/05/13 UCS: Unicode data U+0000..U+00FF
+) (diplomarbeit.aux)
+>>>>>>> f655c011e773de6fc97f870bd34b9f8bdeb6bd24
 \openout1 = `diplomarbeit.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 36.
@@ -683,10 +1198,18 @@ LaTeX Font Info:    ... okay on input line 36.
 LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 36.
 LaTeX Font Info:    ... okay on input line 36.
 
+<<<<<<< HEAD
 (D:\Programme\MiKTeX\tex\latex\ucs\ucsencs.def
 File: ucsencs.def 2011/01/21 Fixes to fontencodings LGR, T3
 )
 (D:\Programme\MiKTeX\tex\context\base\supp-pdf.mkii
+=======
+("C:\Users\linkjo\AppData\Local\Programs\MiKTeX 2.9\tex\latex\ucs\ucsencs.def"
+File: ucsencs.def 2011/01/21 Fixes to fontencodings LGR, T3
+)
+("C:\Users\linkjo\AppData\Local\Programs\MiKTeX 2.9\tex\context\base\supp-pdf.m
+kii"
+>>>>>>> f655c011e773de6fc97f870bd34b9f8bdeb6bd24
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count126
 \scratchdimen=\dimen167
@@ -699,10 +1222,20 @@ File: ucsencs.def 2011/01/21 Fixes to fontencodings LGR, T3
 \MPnumerator=\count130
 \makeMPintoPDFobject=\count131
 \everyMPtoPDFconversion=\toks34
+<<<<<<< HEAD
 ) (D:\Programme\MiKTeX\tex\latex\oberdiek\epstopdf-base.sty
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
 
 (D:\Programme\MiKTeX\tex\latex\oberdiek\grfext.sty
+=======
+)
+("C:\Users\linkjo\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\epstopdf
+-base.sty"
+Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
+
+("C:\Users\linkjo\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\grfext.s
+ty"
+>>>>>>> f655c011e773de6fc97f870bd34b9f8bdeb6bd24
 Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
 )
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
@@ -710,6 +1243,7 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 Package grfext Info: Graphics extension search list:
 (grfext)             [.svg,.eps]
 (grfext)             \AppendGraphicsExtensions on input line 456.
+<<<<<<< HEAD
 )
 ABD: EveryShipout initializing macros
 \AtBeginShipoutBox=\box43
@@ -719,6 +1253,18 @@ Package hyperref Info: Link coloring OFF on input line 36.
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 
 (D:\Programme\MiKTeX\tex\generic\oberdiek\gettitlestring.sty
+=======
+) ABD: EveryShipout initializing macros
+\AtBeginShipoutBox=\box43
+Package hyperref Info: Link coloring OFF on input line 36.
+
+("C:\Users\linkjo\AppData\Local\Programs\MiKTeX 2.9\tex\latex\hyperref\nameref.
+sty"
+Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
+
+("C:\Users\linkjo\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\gettit
+lestring.sty"
+>>>>>>> f655c011e773de6fc97f870bd34b9f8bdeb6bd24
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count132
@@ -726,24 +1272,46 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 36.
 LaTeX Info: Redefining \pageref on input line 36.
 LaTeX Info: Redefining \nameref on input line 36.
+<<<<<<< HEAD
 
 (D:/Daten/bachelorarbeit/bachelorarbeit\diplomarbeit.out)
 (D:/Daten/bachelorarbeit/bachelorarbeit\diplomarbeit.out)
+=======
+ (diplomarbeit.out) (diplomarbeit.out)
+>>>>>>> f655c011e773de6fc97f870bd34b9f8bdeb6bd24
 \@outlinefile=\write4
 \openout4 = `diplomarbeit.out'.
 
 
 babelbib: Set bibliography fall-back language to ngerman
+<<<<<<< HEAD
 (D:\Programme\MiKTeX\tex\latex\babelbib\english.bdf
+=======
+
+("C:\Users\linkjo\AppData\Local\Programs\MiKTeX 2.9\tex\latex\babelbib\english.
+bdf"
+>>>>>>> f655c011e773de6fc97f870bd34b9f8bdeb6bd24
 File: english.bdf 2012/01/03 v1.31 babelbib: multilingual bibliographies (HH)
 
 babelbib extension \btxifchangecaseon added to \extrasenglish
 babelbib extension \btxifchangecaseon added to \extrasUSenglish
+<<<<<<< HEAD
 ) (D:\Programme\MiKTeX\tex\latex\babelbib\french.bdf
 File: french.bdf 2012/01/03 v1.31 babelbib: multilingual bibliographies (HH)
 
 babelbib extension \btxifchangecaseoff added to \extrasfrench
 ) (D:\Programme\MiKTeX\tex\latex\babelbib\german.bdf
+=======
+)
+("C:\Users\linkjo\AppData\Local\Programs\MiKTeX 2.9\tex\latex\babelbib\french.b
+df"
+File: french.bdf 2012/01/03 v1.31 babelbib: multilingual bibliographies (HH)
+
+babelbib extension \btxifchangecaseoff added to \extrasfrench
+)
+("C:\Users\linkjo\AppData\Local\Programs\MiKTeX 2.9\tex\latex\babelbib\german.b
+df"
+>>>>>>> f655c011e773de6fc97f870bd34b9f8bdeb6bd24
 File: german.bdf 2012/01/03 v1.31 babelbib: multilingual bibliographies (HH)
 
 babelbib extension \btxifchangecaseoff added to \extrasnaustrian
@@ -754,15 +1322,24 @@ babelbib: Set language for keywords in the bibliography fixed to ngerman
 babelbib: Set language for keywords in the bibliography fixed to ngerman
 \openout2 = `titelseite.aux'.
 
+<<<<<<< HEAD
 (D:/Daten/bachelorarbeit/bachelorarbeit\titelseite.tex
 <bilder/Kitlogo_de_rgb.pdf, id=46, 196.91472pt x 90.65388pt>
+=======
+(titelseite.tex <bilder/Kitlogo_de_rgb.pdf, id=6, 196.91472pt x 90.65388pt>
+>>>>>>> f655c011e773de6fc97f870bd34b9f8bdeb6bd24
 File: bilder/Kitlogo_de_rgb.pdf Graphic file (type pdf)
 
 <use bilder/Kitlogo_de_rgb.pdf>
 Package pdftex.def Info: bilder/Kitlogo_de_rgb.pdf used on input line 19.
 (pdftex.def)             Requested size: 112.03384pt x 51.5764pt.
 LaTeX Font Info:    Try loading font information for T1+phv on input line 22.
+<<<<<<< HEAD
  (D:\Programme\MiKTeX\tex\latex\psnfss\t1phv.fd
+=======
+
+("C:\Users\linkjo\AppData\Local\Programs\MiKTeX 2.9\tex\latex\psnfss\t1phv.fd"
+>>>>>>> f655c011e773de6fc97f870bd34b9f8bdeb6bd24
 File: t1phv.fd 2001/06/04 scalable font definitions for T1/phv.
 )
 LaTeX Font Info:    External font `cmex10' loaded for size
@@ -778,12 +1355,20 @@ LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <12> not available
 
 
 
+<<<<<<< HEAD
 {C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map} <D:/Daten/bachelorarbeit/b
 achelorarbeit/bilder/Kitlogo_de_rgb.pdf>])
 \openout2 = `erklaerung.aux'.
 
 
 (D:/Daten/bachelorarbeit/bachelorarbeit\erklaerung.tex
+=======
+{C:/Users/linkjo/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map} <./bilder/K
+itlogo_de_rgb.pdf>])
+\openout2 = `erklaerung.aux'.
+
+ (erklaerung.tex
+>>>>>>> f655c011e773de6fc97f870bd34b9f8bdeb6bd24
 Underfull \hbox (badness 10000) in paragraph at lines 3--10
 
  []
@@ -800,16 +1385,23 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 
 
 
+<<<<<<< HEAD
 ] (D:/Daten/bachelorarbeit/bachelorarbeit\diplomarbeit.toc
 LaTeX Font Info:    Try loading font information for T1+aess on input line 1.
 
 (D:\Programme\MiKTeX\tex\latex\ae\t1aess.fd
 File: t1aess.fd 1997/11/16 Font definitions for T1/aess.
 ))
+=======
+]
+
+Package hyperref Warning: old toc file detected, not used; run LaTeX again.
+
+>>>>>>> f655c011e773de6fc97f870bd34b9f8bdeb6bd24
 \tf@toc=\write5
 \openout5 = `diplomarbeit.toc'.
 
- [3
+[3
 
 
 
@@ -818,11 +1410,18 @@ File: t1aess.fd 1997/11/16 Font definitions for T1/aess.
 
 
 ]
+
+Package hyperref Warning: old lof file detected, not used; run LaTeX again.
+
+<<<<<<< HEAD
+]
 (D:/Daten/bachelorarbeit/bachelorarbeit\diplomarbeit.lof)
+=======
+>>>>>>> f655c011e773de6fc97f870bd34b9f8bdeb6bd24
 \tf@lof=\write6
 \openout6 = `diplomarbeit.lof'.
 
- [4
+[4
 
 
 
@@ -832,6 +1431,13 @@ File: t1aess.fd 1997/11/16 Font definitions for T1/aess.
 ]
 \openout2 = `01einleitung.aux'.
 
+<<<<<<< HEAD
+=======
+ (01einleitung.tex
+chapter 1.
+
+LaTeX Warning: Citation `davis93' on page 1 undefined on input line 10.
+>>>>>>> f655c011e773de6fc97f870bd34b9f8bdeb6bd24
 
 (D:/Daten/bachelorarbeit/bachelorarbeit\01einleitung.tex
 chapter 1.
@@ -847,12 +1453,24 @@ chapter 1.
 ]
 \openout2 = `02motivation.aux'.
 
+<<<<<<< HEAD
  (D:/Daten/bachelorarbeit/bachelorarbeit\02motivation.tex
 chapter 2.
 
 Underfull \hbox (badness 10000) in paragraph at lines 12--18
 
  []
+=======
+ (02motivation.tex
+chapter 2.
+
+Underfull \hbox (badness 10000) in paragraph at lines 12--18
+
+ []
+
+
+LaTeX Warning: Citation `davis93' on page 2 undefined on input line 21.
+>>>>>>> f655c011e773de6fc97f870bd34b9f8bdeb6bd24
 
 ) [2
 
@@ -863,18 +1481,177 @@ Underfull \hbox (badness 10000) in paragraph at lines 12--18
 ]
 \openout2 = `03grundlagen.aux'.
 
+<<<<<<< HEAD
  (D:/Daten/bachelorarbeit/bachelorarbeit\03grundlagen.tex
+=======
+ (03grundlagen.tex
+>>>>>>> f655c011e773de6fc97f870bd34b9f8bdeb6bd24
 chapter 3.
 
-Underfull \hbox (badness 10000) in paragraph at lines 3--12
+Underfull \hbox (badness 10000) in paragraph at lines 6--15
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 3--12
+Underfull \hbox (badness 10000) in paragraph at lines 6--15
 
  []
 
+<<<<<<< HEAD
+=======
+
+LaTeX Warning: Citation `davis93' on page 3 undefined on input line 18.
+
+) [3
+
+
+
+
+
+]
+\openout2 = `04konzept.aux'.
+
+ (04konzept.tex
+chapter 4.
+
+Underfull \hbox (badness 10000) in paragraph at lines 5--8
+
+ []
+
+
+LaTeX Warning: Citation `davis93' on page 4 undefined on input line 11.
+
+) [4
+
+
+
+
+
+]
+\openout2 = `05implementierung.aux'.
+
+ (05implementierung.tex
+chapter 5.
+
+Underfull \hbox (badness 10000) in paragraph at lines 10--12
+
+ []
+
+
+LaTeX Warning: Citation `davis93' on page 5 undefined on input line 16.
+
+) [5
+
+
+
+
+
+]
+\openout2 = `06evaluation.aux'.
+
+ (06evaluation.tex
+chapter 6.
+
+Underfull \hbox (badness 10000) in paragraph at lines 4--7
+
+ []
+
+
+LaTeX Warning: Citation `davis93' on page 6 undefined on input line 10.
+
+) [6
+
+
+
+
+
+]
+\openout2 = `07zusammenfassung.aux'.
+
+ (07zusammenfassung.tex
+chapter 7.
+
+LaTeX Warning: Citation `davis93' on page 7 undefined on input line 8.
+
+) [7
+
+
+
+
+
+] (diplomarbeit.bbl
+babelbib: Using the BibTeX style's default font for `name'.
+babelbib: Using the BibTeX style's default font for `lastname'.
+babelbib: Using the BibTeX style's default font for `title'.
+babelbib: Using the BibTeX style's default font for `jtitle'.
+babelbib: Using the BibTeX style's default font for `etal'.
+babelbib: Using the BibTeX style's default font for `journal'.
+babelbib: Using the BibTeX style's default font for `volume'.
+babelbib: Using the BibTeX style's default font for `ISBN'.
+babelbib: Using the BibTeX style's default font for `ISSN'.
+babelbib: Using the BibTeX style's default font for `url'.
+babelbib: Using the BibTeX style's default font for `numeral'.
+LaTeX Font Info:    Try loading font information for T1+aett on input line 24.
+("C:\Users\linkjo\AppData\Local\Programs\MiKTeX 2.9\tex\latex\ae\t1aett.fd"
+File: t1aett.fd 1997/11/16 Font definitions for T1/aett.
+))
+[8
+
+
+
+
+
+
+
+]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 75.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 75.
+ (diplomarbeit.aux (titelseite.aux) (erklaerung.aux) (01einleitung.aux)
+(02motivation.aux) (03grundlagen.aux) (04konzept.aux) (05implementierung.aux)
+(06evaluation.aux) (07zusammenfassung.aux))
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 75.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 75.
+
+
+Package rerunfilecheck Warning: File `diplomarbeit.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `diplomarbeit.out':
+(rerunfilecheck)             Before: D41D8CD98F00B204E9800998ECF8427E;0
+(rerunfilecheck)             After:  883B17F546C95DB0A09DF38788E0C69A;1327.
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 75.
+ ) 
+Here is how much of TeX's memory you used:
+ 19590 strings out of 493323
+ 370268 string characters out of 3129581
+ 530723 words of memory out of 3000000
+ 22677 multiletter control sequences out of 15000+200000
+ 44534 words of font info for 68 fonts, out of 3000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 71i,11n,68p,8850b,691s stack positions out of 5000i,500n,10000p,200000b,50000s
+{C:/Users/linkjo/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/base/8r.en
+c}<C:/Users/linkjo/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfont
+s/cm/cmbx10.pfb><C:/Users/linkjo/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/
+public/amsfonts/cm/cmbx12.pfb><C:/Users/linkjo/AppData/Local/Programs/MiKTeX 2.
+9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/linkjo/AppData/Local/Progr
+ams/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Users/linkjo/AppDa
+ta/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt10.pfb><C:/User
+s/linkjo/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvb8a.pfb>
+<C:/Users/linkjo/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/helvetic/uhv
+r8a.pfb>
+Output written on diplomarbeit.pdf (12 pages, 129773 bytes).
+PDF statistics:
+ 128 PDF objects out of 1000 (max. 8388607)
+ 38 named destinations out of 1000 (max. 500000)
+ 18 words of extra memory for PDF output out of 10000 (max. 10000000)
+>>>>>>> f655c011e773de6fc97f870bd34b9f8bdeb6bd24
 
 !pdfTeX error: pdflatex.EXE (file ./diplomarbeit.pdf): xpdf: reading PDF image 
 failed
