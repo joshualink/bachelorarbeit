@@ -1,6 +1,12 @@
 \chapter{Implementierung}\label{ch:implementierung}
 
-Umbau PSM\\
+Im Kapitel Implementierung wird alles beschrieben und erklärt, was am bestehenden PSM-Projekt verändert und hinzugefügt wurde. Außerdem werden ausgewählte hinzugefügte und veränderte Klassen sowie launch-Dateien dokumentiert, sodass das Kapitel das Verständnis und die Nutzung der Neuheiten im System vereinfacht. Nachdem der Umbauprozess beschrieben wird, bei dem eine Klasse komplett aus dem PSM-Projekt ausgetauscht wurde, widmet sich das Kapiter der Umsetzung des Algorithmuskonzepts und der Einbettung in das vorhandene System.
+
+\section{Umbau PSM-Systems}
+Da das Paket "pbd\_msgs" nicht mehr(?) konstenlos zur Verfügung gestellt wurde, mussten alle Vorkommen der Klassen aus diesem Paket zu alternativen Ersatzklassen geändert werden. Teilweise konnte man dies durch simple Ersetzung erreichen, allerdings gab es nicht für jede Klasse eine Ersatzklasse mit dem selben Funktionsumfang. In den Fällen, in denen Funktionen fehlten oder geringfügig anders funktionierten, konnte man den Umbau durch kleine Anpassungen erreichen oder musste eigene Funktionen schreiben, welche die nötigen Operationen verichten konnten. Alle auf diese Weise programmierten Funktionen wurden hinreichend auf Gleichheit mit ihren Ursprungsfunktionen in ihrer Funktionsweise getestet, indem die Ergebnisse bei gleichen Eingangsparametern abgeglichen wurden.
+
+\section{Differenzbasierter Erkennungsalgorithmus}
+
 alle Klassen die umgebaut wurden\\
 neuer differencebased modus \\
 
