@@ -1,7 +1,20 @@
 \chapter{Grundlagen}\label{ch:grundlagen}
-
-\section{PSM(Probabilistic Scene Model)}
+In diesem Kapitel wird das bestehende Probabilistic Scene Model - System vorgestellt und erklärt. Dabei wird auf das Grundprinzip, die Struktur und die einzelnen Komponenten eingegangen. Außerdem wird das Modell der datengetriebenen Entwicklung erklärt und an einem Beispiel verständlich gemacht.
+\section{PSM (Probabilistic Scene Model)}
+Bei der Entwicklung des Systems war das Ziel, ein System zur Erkennung von Szenen zu entwickeln. Dabei sollten viele Informationen umfasst werden. Dies umfasste die beteiligten Objekte bzw. deren Erscheinung, welche von den zur Erkennung eingesetzten Werkzeugen abhängig ist. Die Auftrittshäufigkeit der Objekte sollte ebenfalls mit einfließen. Der Hauptinformationsträger sind die Relationen der Objekte untereinander, welche in Form von relativen Objektlagen berücksichtigt wurden. Es wurde berücksichtigt, dass Relationen nicht statisch, sondern dynamisch sind. Da eine Szene auch unabhängig von ihrem Ort der Demonstration erkannt werden soll, musste die Lagebeschreibung invariant gegenüber Rotation und Translation sein.\smallskip\\
+Weiterhin sollte Robustheit gegenüber verschiedenen Störfaktoren bestehen. Fehlende Objekte sollen eine Erkennung der Szene erlauben, wenn auch mit entsprechend reduzierter Konfidenz. Da jedes Objekt fehlen kann darf es kein zentrales Referenzobjekt geben, von dem die Relationen zu den anderen Objekten der Szene ausgehen. Überzählige Objekte sollen sich nicht negativ auf das Erkennungsergebnis auswirken. Generell soll sich die Funktionsweise des entwickelten Systems im Rahmen dessen bewegen, was plausibel erscheint.\smallskip\\
+Es wird im folgenden erst auf die Struktur des Systems, dann auf die Eingabeverarbeitung, das innere Datenmodell und letztendlich auf die eigentliche Erkennung eingegangen.
+\begin{deprecated}
+\cite{gehrung14}
+\end{deprecated}
+\subsection{Aufbau}
+Das System ist in mehrere Komponenten aufgeteilt die verschiedenen Aufgaben dienen. Für diese Arbeit wichtig sind vorallem die Komponenten Learner und Inference. Der Learner ist für das Anlernen der Daten und das Einspeichern von Szenen zuständig. Die Inference übernimmt die Erkennung der Szene indem sie in Echtzeit Daten empfängt und die Wahrscheinlichkeiten der Szenen ausgibt. Es gibt außerdem eine Visualizer-Komponente, die dafür zuständig ist, dass verschiedene programminterne Prozesse für den Nutzer sichtbar und verständlich gemacht werden.
+\subsection{Learner - Anlernen der Daten}
+\subsection{Scene Model - Modellerzeugung}
+\subsection{Inference - Szenenerkennung}
 \section{Datengetriebene Entwicklung}
+\subsection{Allgemein}
+\subsection{Am Beispiel: PSM}
 
 Länge max. halb so lang wie Konzept + Implementierung\\
 \\
@@ -13,15 +26,7 @@ Datengetriebene Entwicklung erklären \\
 Viele Bilder benutzen, auch aus Joachims Arbeit\\
 Auch aus Joachims Arbeit \\
 
-\begin{figure}
-	\centering
-	\includegraphics{bilder/Kitlogo_de_rgb.pdf}
-	\caption{eine Grafik ohne Sinn und Verstand}
-	\label{img:grafik-dummy}
-\end{figure}
 
 \begin{deprecated}
 \cite{gehrung14}
-
-
 \end{deprecated}
