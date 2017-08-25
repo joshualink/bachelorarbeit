@@ -1,6 +1,25 @@
 \chapter{Konzept}\label{ch:konzept}
+Das folgende Kapitel thematisiert das Konzept, dass im Zuge der vorliegenden Arbeit entwickelt wurde, um die vorgestellte Problemstellung zu lösen. Zwischen vielen verschiedenen möglichen Ansätzen einen neuen Modus für das PSM System zu entwickeln, entschied ich mich für einen differenzbasierten Vergleich der Positions- und Rotationsrelationen. Dieser wird im ersten Abschnitt erläutert und anschließend wird der Algorithmus sprachlich, grafisch und in Pseudocode erklärt. Zum Schluss wird die Wahrscheinlichkeitsabschätzung für den Algorithmus erklärt und begründet.
 \section{Ansatz}
+Im vorhandenen PSM-System werden im Learner die erhaltenen Positions- und Rotationsdaten zu einem Modell zusammengefasst, dass die vorkommen aller Objekte in Relation zueinander zusammenfasst. Dieser Vorgang führt dazu, dass teilweise Zusammenhänge in den Daten betont werden, aber auch zu einem Informationsverlust da Ausreißer und mutmaßliche Fehlmessungen dadurch verloren gehen. Deshalb kann es sinnvoll sein direkt auf den gemessenen Daten zu arbeiten, um ein Ergebnis zu erhalten welches alle Daten berücksichtigt. \smallskip\\
+Wir betrachten folgendes Szenario. Ein Roboter soll seine Aufgaben aufgrund von einer Szenenerkennung einschätzen und durchführen. In der Szene "Kaffee" gibt es eine volle Kaffeetasse und einen Teelöffel und seine Aufgabe ist es mit dem Löffel den Kaffee umzurühren. In seinen Referenzdaten zu der Szene war der Löffel meist direkt neben der Tasse und nur in einem Fall ein Stück weiter entfernt. Allerdings gilt jede einzelne aufgezeichnete Refernzszene auf äquivalente Weise als Beispiel für die Szene "Kaffee". Das Parametermodell würde diese Ausreißerdaten allerdings glätten und kaum berücksichtigen, sodass der Roboter die Szene selbst mit genau dem Aufbau aus den Refernzdaten möglicherweise nicht erkennen würde. Wenn man allerdings die Erkennung direkt auf den Referenzdaten basiert, erkennt die Szenenerkennung den Ausreißer auch, da sie ja eine Instanz der Szene mit diesem vergleicht, welche diesem entspricht.\smallskip\\
+Abbildung 4.1 verdeutlicht das genannte Szenario. Die roten Punkte stehen für die gemessenen Positionen und die grünen Pfeile stehen für die räumliche Relation zwischen den Objekten. Links sieht man, dass die meisten Messungen einen kleinen Abstand zwischen Löffel und Tasse haben, rechts ist der Ausreißer dargestellt, der möglicherweise vom alten System nicht als die gelernte Szene erkannt wird.\smallskip\\
+Im differenzbasierten Modus sollen also gemessene Objekte direkt mit den Referenzdaten verglichen werden, die das System bereits gelernt hat. Der Algorithmus betrachtet alle Objekte vollvermascht, sodass er die Szenenreferenz findet, die die maximale Ähnlichkeit zu den gemessenen Objekten hat. Darauf basierend wird die Wahrscheinlichkeit abgeschätzt, dass die gemessenen Objekte die Referenzszene enthalten oder repräsentieren. Dabei stören zusätzliche Objekte die Erkennung nicht und eine Unvollständigkeit der Szene führt zu einer kleineren Wahrscheinlichkeit aber nicht zu direkter Ablehnung, da die Szene noch durch weitere Objekterkennungen vervollständigt werden könnte.
+\begin{figure}
+	\centering
+	\includegraphics[width=15cm]{bilder/KonzeptAnsatz.pdf}
+	\caption{Beispiel: Kaffeetasse - Ausrei\ss{}er in den Daten}
+	\label{img:ausreisser}
+\end{figure}
 \section{Erkennungsalgorithmus}
+\subsection{Ausformuliert}
+\begin{figure}
+	\centering
+	\includegraphics[width=15cm]{bilder/AlgorithmusRoh.pdf}
+	\caption{Algorithmus als True False Diagramm}
+	\label{img:janein}
+\end{figure}
+\section{Wahrscheinlichkeitsabschätzung}
 
 komplexer mathematischer formulieren\\
 Vergleichsbasierte Erkennung erklären\\

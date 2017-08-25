@@ -9,17 +9,17 @@ Da das Paket "pbd\_msgs" nicht konstenlos zur Verfügung gestellt wird, mussten 
 \subsection{Ersatzfunktionen}
 
 \subsection{Datenbankeinbindung}
+Im vergleichbaren ISM Projekt, welches eine ähnliche Zielsetzung wie das ISM Projekt hat, allerdings einen nicht stochastischen Ansatz verfolgt, kann man die Szenen, die das System lernen soll aus einer Datenbank auslesen. Aus Gründen der Vergleichbarkeit wie auch dem Komfort ist es sinnig, diese Datenbankschnittstelle für das PSM System nachzurüsten. Um dies zu erreichen wurde ein Datenbankpfad in die launch Datei des Learners(learner.launch) hinzugefügt und der veraltete rosbagfiles Parameter damit ersetzt. Die Datenbank wird innerhalb der SceneLearningEngine Klasse ausgelesen und die erhaltenen Daten, welche jeweils Vorkommen und von verschiedenen Objekten in diversen Szenen repräsentieren, werden anschließend konvertiert, sodass sie für das System sinnvolle AsrObject-Instanzen werden.\smallskip\\
+
 
 
 \section{Differenzbasierter Erkennungsalgorithmus}
+Einerseits beschreibt dieses Kapitel, wie der im Konzept vorgestellte Algorithmus programmiertechnisch umgesetzt, andererseits wie dieser in das bestehende System eingebunden wurde. 
+\subsection{Algorithmus}
+\subsection{Einbindung PSM}
+Da davon abgesehen wird die Parametisierung des Szenenmodells zu nutzen, braucht man den Learner und das Szenenmodell nur noch zu dem Zweck, dass überliefert wird, welche Szenen potentiell erkannt werden sollen. Die einzigen Informationen die der algorithmus nutzt sind der Name der Szene und Anzahl der enthaltenen Objekte.
+In der Launch Datei der Erkennung(inference.launch) wurde ein neuer Parameter hinzugefügt um den Pfad der Datenbank anzugeben. ...
 
 alle Klassen die umgebaut wurden\\
 neuer differencebased modus \\
 
-
-
-\begin{deprecated}
-\cite{davis93}
-
-
-\end{deprecated}
