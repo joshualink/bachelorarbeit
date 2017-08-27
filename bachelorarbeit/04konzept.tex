@@ -52,3 +52,14 @@ Im gesamten handelt es sich um eine Wahrscheinlichkeitsabschätzung die sich aus
 \end{figure}
 
 \subsection{Szenenwahrscheinlichkeit}
+Die Szenenwahrscheinlichkeit setzt sich aus den Objektwahrscheinlichkeiten der Szene zusammen. Mit jedem möglichen Referenzobjekt wird in jeder Instanz der Szene in den Daten die Objektwahrscheinlichkeit für jedes andere Objekt berechnet und anschließend in eine mögliche Szenenwahrscheinlichkeit zusammengefasst. Diese möglichen Szenenwahrscheinlichkeiten bestimmen, wie wahrscheinlich es ist, dass die Szene in den gemessenen Objekten repräsentiert ist, wenn man nur genau die gewählte Instanz der Daten und das gewählte Referenzobjekt betrachtet. Aus den möglichen Szenenwahrscheinlichkeiten wird die maximale Szenenwahrscheinlichkeit als das entgültige Ergebnis ausgewählt. Man findet also die Wahrscheinlichkeit dafür, dass die Szene vorhanden ist, ausgehend von den Referenzdaten, die am dichtesten an den gemessenen Daten sind.\smallskip\\
+Die Objektwahrscheinlichkeiten werden jeweils mit einem A-priori Wert multipliziert und ihre Wichtigkeit in der Szene zu gewichten. Objekte müssen nicht in jeder Datenaufzeichnung der Szene vorhanden sein und der A-priori Wert zeigt auf wie signifikant und wichtig das Auftreten eines Objekts in einer Szene ist. Zum Beispiel ist eine Gabel auf fast jedem gedeckten Mittagstisch, tiefe oder flache Teller werden sich jedoch teils in den Daten abwechseln und nicht beide in jeder Aufzeichnung in der Szene vorhanden sein. Somit hätte die Gabel einen höheren A-priori Wert. \smallskip\\
+Die gewichteten Objektwahrscheinlichkeiten werden nun aufaddiert. Jede Objektwahrscheinlichkeit hat einen Wert, der größer oder gleich 0 und kleiner oder gleich 1 beträgt. Außerdem wird noch 1 aufaddiert, da es ja ein Referenzobjekt gibt, bei dem man davon ausgeht, dass es genau an der richtigen Position ist und die gemessene Orientierung hat. Anschließend teilt man die Summe durch die Anzahl aller Objekte, um den durchschnittlichen Wert der Objektwahrscheinlichkeit zu erhalten. Dieser entspricht dem gewichteten Erwartungswert der Objektwahrscheinlichkeit von einem Objekt, dass man zufällig aus der zu testenden Instanz der Szene zieht. Dieser gewichtete Erwartungswert entspricht der Wahrscheinlichkeit, dass die Szene auf Basis der gemessenen Objekte vorhanden sein könnte. Parametisiert muss dieser Wert der Szenenwahrscheinlichkeit nicht mehr werden, da dies schon auf der Ebene der Objektwahrscheinlichkeit passiert.\smallskip\\
+In Abbildung \ref{img:formelnSzene} wird...
+\begin{figure}
+	\centering
+	\includegraphics[width=16cm]{bilder/FormelnSzene.pdf}
+	\caption{Formeln zur Szenenwahrscheinlichkeit}
+	\label{img:formelnSzene}
+\end{figure}
+
