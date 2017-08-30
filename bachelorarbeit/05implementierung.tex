@@ -3,15 +3,31 @@
 Im Kapitel Implementierung wird alles beschrieben und erklärt, was am bestehenden PSM-Projekt verändert und hinzugefügt wurde. Außerdem werden ausgewählte hinzugefügte und veränderte Klassen sowie launch-Dateien dokumentiert, sodass das Kapitel das Verständnis und die Nutzung der Neuheiten im System vereinfacht. Nachdem der Umbauprozess beschrieben wird, bei dem eine Klasse komplett aus dem PSM-Projekt ausgetauscht wurde, widmet sich das Kapitel der Umsetzung des Algorithmuskonzepts und der Einbettung in das vorhandene System.
 
 \section{Umbau PSM}
-Da das Paket "pbd\_msgs" nicht konstenlos zur Verfügung gestellt wird, mussten alle Vorkommen der Klassen aus diesem Paket zu alternativen Ersatzklassen geändert werden. Teilweise konnte man dies durch simple Ersetzung erreichen, allerdings gab es nicht für jede Klasse eine Ersatzklasse mit dem selben Funktionsumfang. In den Fällen, in denen Funktionen fehlten oder geringfügig anders funktionierten, konnte man den Umbau durch kleine Anpassungen erreichen oder musste eigene Funktionen schreiben, welche die nötigen Operationen verichten konnten. Alle auf diese Weise programmierten Funktionen wurden hinreichend auf Gleichheit mit ihren Ursprungsfunktionen in ihrer Funktionsweise getestet, indem die Ergebnisse bei gleichen Eingangsparametern abgeglichen wurden. Außerdem wurde eine Datenbankschnittstelle für das PSM-System hinzugefügt, da es Daten zum anlernen, wegen einem parallel laufenden anderen Projekt, schon in Datenbanken gibt und diese vom System noch nicht verwertet werden konnten.
-\subsection{Klassenaustausch}
+Da das Paket \textit{pbd\_msgs} nicht konstenlos zur Verfügung gestellt wird, mussten alle Vorkommen der Klassen aus diesem Paket zu alternativen Ersatzklassen geändert werden. Teilweise konnte man dies durch simple Ersetzung erreichen, allerdings gab es nicht für jede Klasse eine Ersatzklasse mit dem selben Funktionsumfang. In den Fällen, in denen Funktionen fehlten oder geringfügig anders funktionierten, konnte man den Umbau durch kleine Anpassungen erreichen oder musste eigene Funktionen schreiben, welche die nötigen Operationen verichten konnten. Alle auf diese Weise programmierten Funktionen wurden hinreichend auf Gleichheit mit ihren Ursprungsfunktionen in ihrer Funktionsweise getestet, indem die Ergebnisse bei gleichen Eingangsparametern abgeglichen wurden. Außerdem wurde eine Datenbankschnittstelle für das PSM-System hinzugefügt, da es Daten zum anlernen, wegen einem parallel laufenden anderen Projekt, schon in Datenbanken gibt und diese vom System noch nicht verwertet werden konnten.
+\subsection{Klassenaustausch und Ersatzfunktionen}
+\begin{figure}
+	\centering
+	\includegraphics[width=12cm]{bilder/filelist.pdf}
+	\caption{Liste der Dateien die beim Umbau verändert wurden}
+	\label{img:filelist}
+\end{figure}
+Der größte Arbeitsaufwand ergab sich dadurch, dasss das die repräsentation der Szenenobjekte im System ausgerauscht werden musste. Im Zuge dieser Arbeit wurde im ganzen PSM-System \textit{pbd\_msgs::PbdObject} durch \textit{ISM::Object}, die Objektrepräsentation aus dem ISM-Projekt ersetzt. Später wurden dann die Objekte aus dem ISM-System teils durch \textit{AsrObject} repräsentiert und damit wurde dies auch im PSM-System eingeführt.\smallskip\\
+In Abbildung \ref{img:filelist} sind Dateien aufgelistet, die im Zuge des Umbaus geändert werden mussten. Die Liste ist in drei Teile aufgeteilt, die die Änderungen verschiedenen Ordnern zuordnen. Der erste Teil ist im \textit{asr\_psm}-Ordner, welcher den Kern des PSM-Projekts enthält. Der zweite Teil ist in \textit{asr\_psm\_visualizations} enthalten, des Komponente die die Visualisierung des PSM-Systems übernimmt. Der dritte und letzte Part ist in \textit{asr\_relation\_graph\_generator} enthalten.
 
-\subsection{Ersatzfunktionen}
 
 \subsection{Datenbankeinbindung}
+\begin{figure}
+	\centering
+	\includegraphics[width=15cm]{bilder/database.pdf}
+	\caption{Datenbankanbindung des Learner-Moduls}
+	\label{img:database}
+\end{figure}
 Im vergleichbaren ISM-Projekt, welches eine ähnliche Zielsetzung wie das PSM-Projekt hat, allerdings einen nicht stochastischen Ansatz verfolgt, kann man die Szenen, die das System lernen soll aus einer Datenbank auslesen. Aus Gründen der Vergleichbarkeit wie auch dem Komfort ist es sinnig, diese Datenbankschnittstelle für das PSM System nachzurüsten. Um dies zu erreichen wurde ein Datenbankpfad in die Launch-Datei des Learners \textit{learner.launch} hinzugefügt und der veraltete rosbagfiles Parameter damit ersetzt. Die Datenbank wird innerhalb der \textit{SceneLearningEngine} Klasse ausgelesen und die erhaltenen Daten, welche jeweils Vorkommen und von verschiedenen Objekten in diversen Szenen repräsentieren, werden anschließend konvertiert, sodass sie für das System sinnvolle AsrObject-Instanzen werden.\smallskip\\
-
-
+Für den Zugriff auf die Datenbank nutzt die Engine-Klasse die im ISM-System gestellte Hilfsklasse \textit{TableHelper}, die auf die Erkennungssysteme zugeschnittene Funktionen beinhaltet, die man für den Datenbankzugriff nutzen kann.\smallskip\\
+In Abbildung \ref{img:database} sieht man deutlich, wo der Datenbankzugriff im Learner Klassendiagramm geschiet, nämlich bei der \textit{SceneLearningEngine}-Klasse im gekapselten Bereich der Engine. Die Pfeile simbolisieren den Austausch zwischen Programmcode und Datenbank. Der Programmcode schickt anfragen, die Datenbank liefert die gewollten Daten, falls die Anfragen korrekt sind.
+\begin{deprecated}
+\cite{gehrung14}
+\end{deprecated}
 
 \section{Differenzbasierter Erkennungsalgorithmus}
 Einerseits beschreibt dieses Kapitel, wie der im Konzept vorgestellte Algorithmus programmiertechnisch umgesetzt, andererseits wie dieser in das bestehende System eingebunden wurde. 
@@ -34,12 +50,22 @@ Die Variable \textit{mDataBaseName} enthält den Pfad zur Datenbank, der im Kons
 \textit{patternName} ist der Szenenname der gerade zu testenden Szene. Dieser ist wichtig, um die richtigen Objekte aus der Datenbank zu lesen, damit die Szenenwahrscheinlichkeit der korrekten Szene bestimmt wird.\smallskip\\
 Die Variable \textit{tableHelper} zeigt auf eine Instanz der Hilfsklasse \textit{Tablehelper}, welche viele Funktionen beinhaltet die bei dem Zugriff auf Datenbanken nützlich sind. Im Konstruktor wird die Funktion \textit{getRecordedPattern} genutzt, welche einen \textit{string} annimmt, der die Bezeichnung für eine Szene ist und die Objekte dieser Szene zurückliefert. Die Objekte sind unteranderem als Sets gespeichert, sodass man setweise über die Objekte iterieren kann.\smallskip\\
 Die Methode \textit{findObjectOfType} bekommt eine Liste von Objekten und eine eindeutige Identifikation eines Objekts übergeben und gibt das Objekt aus der Liste mit der gegebene Identifikation zurück. Falls kein Objekt der Liste die gegebene Identifikation hat, wird ein NULL Objekt zurückgegeben.\smallskip\\
-Die Methode \textit{normalizeVector3d} normiert einen gegebene 3D Vektor, das heißt, dieser wird auf Länge 1 gebracht. Die Funktion wurde für verschiedene Berechnungen benutzt, die während des Testens und des Forschens an dem Algorithmus und dem Modus an sich, wird allerdings momentan nicht mehr genutzt und ist veraltet. Der Vollständigkeit halber und falls noch weiter daran geforscht wird und die Funktion eventuell nochmal gebraucht wird, wurde sie in der Klasse behalten.\smallskip\\
+Die Methode \textit{normalizeVector3d} normiert einen gegebene 3D Vektor, das heißt, dieser wird auf Länge 1 gebracht. Die Funktion wurde für verschiedene Berechnungen benutzt, die während des Testens und des Forschens an dem Algorithmus und dem Modus an sich, wird allerdings momentan nicht mehr genutzt und ist veraltet. Der Vollständigkeit halber und falls noch weiter daran geforscht wird und die Funktion eventuell nochmal gebraucht wird, wurde sie in der Klasse behalten.\smallskip\\s
+\begin{figure}
+	\centering
+	\includegraphics[width=17cm]{bilder/ProgrammcodeKommentiert.pdf}
+	\caption{Programmcode des Algorithmus}
+	\label{img:programcode}
+\end{figure}
 
 \subsection{Einbindung PSM}
-Da davon abgesehen wird die Parametisierung des Szenenmodells zu nutzen, braucht man den Learner und das Szenenmodell nur noch zu dem Zweck, dass überliefert wird, welche Szenen potentiell erkannt werden sollen. Die einzigen Informationen die der Algorithmus nutzt sind der Name der Szene und Anzahl der enthaltenen Objekte, sowie die Indentifikationen dieser.
-In der Launch-Datei der Erkennung \textit{inference.launch} wurde ein neuer Parameter hinzugefügt um den Pfad der Datenbank anzugeben. Die Datenbank enthält die Referenzinstanzen von jeder zu testenden Szene.
-
-alle Klassen die umgebaut wurden\\
-neuer differencebased modus \\
+Da davon abgesehen wird die Parametisierung des Szenenmodells zu nutzen, braucht man den Learner und das Szenenmodell nur noch zu dem Zweck, dass überliefert wird, welche Szenen potentiell erkannt werden sollen. Die einzigen Informationen die der Algorithmus nutzt sind der Name der Szene und Anzahl der enthaltenen Objekte, sowie die Indentifikationen dieser. Das Learner-Modul musste für den neuen Algorithmus also nicht weiter überarbeitet werden sondern wird genauso eingesetzt, wie es auch im restlichen PSM-System eingesetzt wird. Es wird nur eben nicht auf alle möglichen Daten zugegriffen die zur Verfügung gestellt werden.
+In der Launch-Datei der Erkennung \textit{inference.launch} wurde ein neuer Parameter hinzugefügt um den Pfad der Datenbank anzugeben. Die Datenbank enthält die Referenzinstanzen von jeder zu testenden Szene. Im Projekt gab es schon verschiedene Modi mit denen man die Erkennung laufen lassen konnte, die unter dem Parameter \textit{inference\_algorithm} in der Launch-Datei eingestellt werden konnten. Zu dem neuen Modus, für den man den Parameter auf \textit{difference} setzen muss, gibt es noch die Varianten \textit{powerset}, \textit{summarized}, \textit{multiplied} und \textit{maximum}. Von diesen wurde zuletzt nur noch der \textit{maximum}-Modus genutzt.\smallskip\\
+\begin{figure}
+	\centering
+	\includegraphics[width=15cm]{bilder/InferenceAlgorithm.pdf}
+	\caption{Klassendiagramm - InferenceAlgorithm-Klasse und Erben}
+	\label{img:vererbung}
+\end{figure}
+Abbildung \ref{img:vererbung} zeigt teilweise die Vererbung der Klasse \textit{InferenceAlgorithm}. Es wurde der Teilbaum der Erben für die Klasse \textit{BackgroundInferenceAlgorithm} weggelassen, da dieser symmetrisch zu der anderen Hälfte der Vererbung ist. Zu Jeder Vordergrundklasse gibt es eine Hintergrundklasse die statt mit \textit{Foreground} mit \textit{Background} gekennzeichnet ist. Um den Algorithmus richtig einzubinden wurde demnach sowohl die Klasse \textit{DifferenceForegroundInferenceAlgorithm} als auch die Klasse \textit{DifferenceBackgroundAlgorithm} hinzugefügt.
 
