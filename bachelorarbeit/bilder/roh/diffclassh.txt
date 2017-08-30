@@ -1,0 +1,33 @@
+class DifferenceForegroundInferenceAlgorithm : public ForegroundInferenceAlgorithm {
+  public:
+
+    void doInference(std::vector<ISM::Object> pEvidenceList, std::ofstream& pRuntimeLogger);
+  
+    double getProbability();
+
+    double differenceBetween(ISM::Object pRoot, ISM::Object pTar, ISM::Object pDiffRoot, ISM::Object pDiffTar);
+    
+  private:
+
+    double mMaximumDistance;
+
+    double  mMaximumRotation;
+
+    double mProbability;
+
+    ISM::RecordedPatternPtr mPattern;
+
+    std::string mDataBaseName;
+
+    std::string patternName;
+
+    boost::shared_ptr<ISM::TableHelper> tableHelper;
+
+    ISM::Object findObjectOfType(std::vector<ISM::Object> pList, std::string pTypeAndObservedId);
+
+    void normalizeVector3d(Eigen::Vector3d input);
+
+};
+
+
+
