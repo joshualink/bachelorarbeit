@@ -1,0 +1,90 @@
+       libism/ISM/common_type/Point.cpp
+       libism/ISM/common_type/Point.hpp
+       libism/ISM/common_type/Pose.cpp
+       libism/ISM/common_type/Pose.hpp
+       libism/ISM/common_type/Quaternion.cpp
+       libism/ISM/common_type/Quaternion.hpp
+       include/inference/model/foreground/ocm/shape/HierarchicalShapeModel.h
+       include/inference/model/foreground/ocm/shape/HierarchicalShapeModelNode.h
+       include/learner/SceneLearner.h
+       include/learner/SceneLearningEngine.h
+       include/learner/SceneModelLearner.h
+       include/learner/background/BackgroundSceneLearner.h
+       include/learner/foreground/ForegroundSceneLearner.h
+       include/learner/foreground/ocm/OcmForegroundSceneLearner.h
+       include/learner/foreground/ocm/SceneObjectLearner.h
+       include/learner/foreground/ocm/ocm/OcmSceneObjectLearner.h
+       include/learner/foreground/ocm/ocm/OcmTree.h
+       launch/learner.launch
+       src/inference/model/foreground/ocm/shape/HierarchicalShapeModel.cpp
+       src/inference/model/foreground/ocm/shape/HierarchicalShapeModelNode.cpp
+       src/learner.cpp
+       src/learner/SceneLearner.cpp
+       src/learner/SceneLearningEngine.cpp
+       src/learner/SceneModelLearner.cpp
+       src/learner/background/BackgroundSceneLearner.cpp
+       src/learner/foreground/ForegroundSceneLearner.cpp
+       src/learner/foreground/ocm/OcmForegroundSceneLearner.cpp
+       src/learner/foreground/ocm/ocm/OcmSceneObjectLearner.cpp
+       src/learner/foreground/ocm/ocm/OcmTree.cpp
+       include/visualization/psm/ProbabilisticPrimarySceneObjectVisualization.h
+       include/visualization/psm/ProbabilisticSecondarySceneObjectVisualization.h
+       include/visualization/psm/helper/CoordinateFrameVisualizer.h
+       include/visualization/psm/helper/GaussianKernelVisualizer.h
+       include/visualization/psm/helper/KinematicChainVisualizer.h
+       include/visualization/psm/helper/SampleVisualizer.h
+       src/visualization/psm/ProbabilisticPrimarySceneObjectVisualization.cpp
+       src/visualization/psm/ProbabilisticSecondarySceneObjectVisualization.cpp
+       src/visualization/psm/helper/CoordinateFrameVisualizer.cpp
+       src/visualization/psm/helper/GaussianKernelVisualizer.cpp
+       src/visualization/psm/helper/KinematicChainVisualizer.cpp
+       src/visualization/psm/helper/SampleVisualizer.cpp
+       include/trainer/PSMTrainer.h
+       include/trainer/TreeNode.h
+       include/trainer/generator/heuristic/DirectionRelationHeuristic.h
+       include/trainer/generator/heuristic/HeuristicalTreeGenerator.h
+       include/trainer/source/ObjectSetList.h
+       include/trainer/source/PbdSceneGraphSource.h
+       src/trainer/PSMTrainer.cpp
+       src/trainer/TreeNode.cpp
+       src/trainer/generator/heuristic/DirectionRelationHeuristic.cpp
+       src/trainer/generator/heuristic/HeuristicalTreeGenerator.cpp
+       src/trainer/source/ObjectSetList.cpp
+       src/trainer/source/PbdSceneGraphSource.cpp
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       Changed Classes:
+
+learner
+  learner
+  SceneLearner
+  SceneLearningEngine
+  SceneModelLearner
+  OcmForegroundSceneLearnerBackgroundSceneLearner
+  OcmForegroundSceneLearner
+  SceneObjectLearner
+  OcmModel
+  OcmSceneObjectLearner
+    OcmTree
+  SceneInferenceEngine
+    HierachicalShapeModel
+    HierachicalShapeModelNode
+  
+psm_visualizations
+  ProbabilisticPrimarySceneObjectVisualization
+  ProbabilisticSceneModelVisualization
+  ProbabilisticSceneVisualization
+  ProbabilisticSecondarySceneObjectVisualization
+  KinematicChainVisualizer
+  SampleVisualizer
+ 
+to Delete
+  ResourcesForPsm::Pose
+  Pbd stuff
