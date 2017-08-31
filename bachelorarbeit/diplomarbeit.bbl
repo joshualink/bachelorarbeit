@@ -23,4 +23,15 @@
 \newblock {\latintext
   \btxurlfont{http://www.aaai.org/ojs/index.php/aimagazine/article/view/1029}}.
 
+\bibitem [{Geh14}]{gehrung14}
+\btxnamefont {Joachim \btxlastnamefont {Gehrung}}\btxauthorcolon\
+  \btxjtitlefont {\btxifchangecase {Probabilistische szenenerkennung durch
+  hierarchische constellation models über räumliche relationen aus
+  demonstrierten objekttrajektorien}{Probabilistische Szenenerkennung durch
+  hierarchische Constellation Models über räumliche Relationen aus
+  demonstrierten Objekttrajektorien}}.
+\newblock \btxpageslong {}\ 5--63, 2014.
+\newblock {\latintext
+  \btxurlfont{http://www.aaai.org/ojs/index.php/aimagazine/article/view/1029}}.
+
 \end{thebibliography}

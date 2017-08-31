@@ -7,7 +7,7 @@ Abbildung \ref{img:ausreisser} verdeutlicht das genannte Szenario. Die roten Pun
 Im differenzbasierten Modus sollen also gemessene Objekte direkt mit den Referenzdaten verglichen werden, die das System bereits gelernt hat. Der Algorithmus betrachtet alle Objekte vollvermascht, sodass er die Szenenreferenz findet, die die maximale Ähnlichkeit zu den gemessenen Objekten hat. Darauf basierend wird die Wahrscheinlichkeit abgeschätzt, dass die gemessenen Objekte die Referenzszene enthalten oder repräsentieren. Dabei stören zusätzliche Objekte die Erkennung nicht und eine Unvollständigkeit der Szene führt zu einer kleineren Wahrscheinlichkeit aber nicht zu direkter Ablehnung, da die Szene noch durch weitere Objekterkennungen vervollständigt werden könnte.
 \begin{figure}
 	\centering
-	\includegraphics[width=15cm]{bilder/KonzeptAnsatz.pdf}
+	\includegraphics[width=14cm]{bilder/KonzeptAnsatz.pdf}
 	\caption{Beispiel: Kaffeetasse - Ausrei\ss{}er in den Daten}
 	\label{img:ausreisser}
 \end{figure}
@@ -19,7 +19,7 @@ Der  Algorithmus läuft wie folgt ab. Für jedes Objekt, der zu testenden  Szene
 Nun werden alle Objektwahrscheinlichkeiten zu einer Szenenwahrscheinlichkeit zusammengefasst. Diese wird innerhalb der Iteration über die Szeneninstanzen maximiert. Außerdem wird dieser Maximalwert wiederum innerhalb der äußersten Schleife maximiert, welche über alle Objekte iteriert, die sowohl in der zu testenden Szene sind als auch von der Objekterkennung erkannt wurden.  Es wird also der absolute maximale Wert der Szenenwahrscheinlichkeit bestimmt, den man mit einer der Szeneninstanzen mit der beschriebenen Schleife mit jedwedem Referenzobjekt erzeugen kann. Dieser Maximalwert ist die Wahrscheinlichkeit, ob die zu testende Szene in den Gemessenen Objekten und potentiell weiteren unbekannten Objekten enthalten ist, welche von der Objekterkennung noch erkannt werden könnten.\smallskip\\
 \begin{figure}
 	\centering
-	\includegraphics[width=16cm]{bilder/AlgorithmusRoh.pdf}
+	\includegraphics[width=14cm]{bilder/AlgorithmusRoh.pdf}
 	\caption{Algorithmus als vereinfachtes Flussdiagramm}
 	\label{img:janein}
 \end{figure}
@@ -31,7 +31,7 @@ Die Variable Name, die jedes Objekt gesetzt hat ist eine Identifizierung um Obje
 Die Funktion FindeObjektMitName(string Name) gibt das Objekt aus der Liste zurück, welches den gegebenen Namen trägt. Falls kein Objekt mit dem gegebenen Namen existiert wird NULL zurückgegeben. BerechneObjektWahrscheinlichkeit(Objekt C, Objekt D, Objekt A, Objekt B) nimmt vier Objekte und berechnet die Positions- und Orientierungsunterschiede zwischen den Parametern C und D sowie zwischen A und B. Anschließend werden die Differenzen abgeglichen und basierend auf den Unterschieden eine Wahrscheinlichkeitsabschätzung zwischen 0 und 1 abgegeben, wobei 1 für "mit der Szene übereinstimmend" und 0 für "weit entfernt" steht. Auch die Komplette Funktion speichert am Ende eine Wahrscheinlichkeit zwischen 0 und 1. Sie wird nicht ausgegeben, da auf die eingespeicherte Wahrscheinlichkeit über eine andere Schnittstelle zugegriffen wird und der Algorithmus nur den Zweck erfüllt die Wahrscheinlichkeit zu berechnen.
 \begin{figure}
 	\centering
-	\includegraphics[width=16cm]{bilder/PseudoCode.pdf}
+	\includegraphics[width=14cm]{bilder/PseudoCode.pdf}
 	\caption{Algorithmus als PseudoCode}
 	\label{img:pseudocode}
 \end{figure}
@@ -47,7 +47,7 @@ In Abbildung \ref{img:formelnObj} kommen Testobjekt T, Referenzobjekt R, gemesse
 Im gesamten handelt es sich um eine Wahrscheinlichkeitsabschätzung die sich aus den Komponenten der Positions- und der Rotationswahrscheinlichkeit zusammensetzt. Die beiden einzelnen Komponenten beschreiben jeweils wie wahrscheinlich ist, dass aufgrund der gegebenen Objekte die zu testende Szene in der Objekterkennung repräsentiert wird, wenn man nur die jeweilige Komponente betrachtet.
 \begin{figure}
 	\centering
-	\includegraphics[width=16cm]{bilder/Formeln.pdf}
+	\includegraphics[width=14cm]{bilder/Formeln.pdf}
 	\caption{Formeln zur Objektwahrscheinlichkeit}
 	\label{img:formelnObj}
 \end{figure}
@@ -58,7 +58,7 @@ Die Objektwahrscheinlichkeiten werden jeweils mit einem A-priori Wert multiplizi
 Die gewichteten Objektwahrscheinlichkeiten werden nun aufaddiert. Jede Objektwahrscheinlichkeit hat einen Wert, der größer oder gleich 0 und kleiner oder gleich 1 beträgt. Außerdem wird noch 1 aufaddiert, da es ja ein Referenzobjekt gibt, bei dem man davon ausgeht, dass es genau an der richtigen Position ist und die gemessene Orientierung hat. Anschließend teilt man die Summe durch die Anzahl aller Objekte, um den durchschnittlichen Wert der Objektwahrscheinlichkeit zu erhalten. Dieser entspricht dem gewichteten Erwartungswert der Objektwahrscheinlichkeit von einem Objekt, dass man zufällig aus der zu testenden Instanz der Szene zieht. Dieser gewichtete Erwartungswert entspricht der Wahrscheinlichkeit, dass die Szene auf Basis der gemessenen Objekte vorhanden sein könnte. Parametisiert muss dieser Wert der Szenenwahrscheinlichkeit nicht mehr werden, da dies schon auf der Ebene der Objektwahrscheinlichkeit passiert.\smallskip\\
 \begin{figure}
 	\centering
-	\includegraphics[width=16cm]{bilder/FormelnSzene.pdf}
+	\includegraphics[width=14cm]{bilder/FormelnSzene.pdf}
 	\caption{Formeln zur Szenenwahrscheinlichkeit}
 	\label{img:formelnSzene}
 \end{figure}

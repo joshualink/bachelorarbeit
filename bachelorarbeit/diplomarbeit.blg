@@ -15,45 +15,46 @@ Database file #1: diplomarbeit.bib
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Warning--empty language in davis93
-You've used 1 entry,
+Warning--empty journal in gehrung14
+You've used 2 entries,
             3218 wiz_defined-function locations,
-            709 strings with 6651 characters,
-and the built_in function-call counts, 592 in all, are:
-= -- 50
-> -- 25
-< -- 0
-+ -- 9
-- -- 9
-* -- 70
-:= -- 93
-add.period$ -- 3
-call.type$ -- 1
-change.case$ -- 7
-chr.to.int$ -- 1
-cite$ -- 2
-duplicate$ -- 23
-empty$ -- 43
-format.name$ -- 17
-if$ -- 107
+            714 strings with 6822 characters,
+and the built_in function-call counts, 1029 in all, are:
+= -- 92
+> -- 33
+< -- 2
++ -- 11
+- -- 11
+* -- 107
+:= -- 155
+add.period$ -- 6
+call.type$ -- 2
+change.case$ -- 12
+chr.to.int$ -- 2
+cite$ -- 4
+duplicate$ -- 48
+empty$ -- 83
+format.name$ -- 23
+if$ -- 205
 int.to.chr$ -- 1
 int.to.str$ -- 0
-missing$ -- 2
-newline$ -- 21
-num.names$ -- 3
-pop$ -- 5
+missing$ -- 4
+newline$ -- 26
+num.names$ -- 6
+pop$ -- 13
 preamble$ -- 1
-purify$ -- 8
+purify$ -- 14
 quote$ -- 0
-skip$ -- 14
+skip$ -- 32
 stack$ -- 0
-substring$ -- 26
-swap$ -- 8
-text.length$ -- 0
-text.prefix$ -- 0
+substring$ -- 48
+swap$ -- 16
+text.length$ -- 2
+text.prefix$ -- 1
 top$ -- 0
-type$ -- 8
-warning$ -- 1
-while$ -- 5
-width$ -- 2
-write$ -- 27
-(There was 1 warning)
+type$ -- 16
+warning$ -- 2
+while$ -- 9
+width$ -- 4
+write$ -- 38
+(There were 2 warnings)

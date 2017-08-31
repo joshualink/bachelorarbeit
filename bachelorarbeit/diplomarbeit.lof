@@ -2,10 +2,20 @@
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {\relax 2.1}{\ignorespaces Beispiel: Relative Position eines Objekts zu einem anderen}}{3}{figure.2.1}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {\relax 3.1}{\ignorespaces eine Grafik ohne Sinn und Verstand}}{5}{figure.3.1}
+\contentsline {figure}{\numberline {\relax 3.1}{\ignorespaces Klassendiagramm des Learner-Moduls \cite {gehrung14}}}{6}{figure.3.1}
+\contentsline {figure}{\numberline {\relax 3.2}{\ignorespaces Beispiel eines Szenenmodells - Fr\IeC {\"u}hst\IeC {\"u}cksszene \cite {gehrung14}}}{8}{figure.3.2}
+\contentsline {figure}{\numberline {\relax 3.3}{\ignorespaces Klassendiagramm des Inference-Moduls \cite {gehrung14}}}{9}{figure.3.3}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {\relax 4.1}{\ignorespaces Beispiel: Kaffeetasse - Ausrei\ss {}er in den Daten}}{7}{figure.4.1}
-\contentsline {figure}{\numberline {\relax 4.2}{\ignorespaces Algorithmus als True False Diagramm}}{8}{figure.4.2}
+\contentsline {figure}{\numberline {\relax 4.1}{\ignorespaces Beispiel: Kaffeetasse - Ausrei\ss {}er in den Daten}}{12}{figure.4.1}
+\contentsline {figure}{\numberline {\relax 4.2}{\ignorespaces Algorithmus als vereinfachtes Flussdiagramm}}{14}{figure.4.2}
+\contentsline {figure}{\numberline {\relax 4.3}{\ignorespaces Algorithmus als PseudoCode}}{15}{figure.4.3}
+\contentsline {figure}{\numberline {\relax 4.4}{\ignorespaces Formeln zur Objektwahrscheinlichkeit}}{17}{figure.4.4}
+\contentsline {figure}{\numberline {\relax 4.5}{\ignorespaces Formeln zur Szenenwahrscheinlichkeit}}{18}{figure.4.5}
 \addvspace {10\p@ }
+\contentsline {figure}{\numberline {\relax 5.1}{\ignorespaces Liste der Dateien die beim Umbau ver\IeC {\"a}ndert wurden}}{21}{figure.5.1}
+\contentsline {figure}{\numberline {\relax 5.2}{\ignorespaces Datenbankanbindung des Learner-Moduls}}{22}{figure.5.2}
+\contentsline {figure}{\numberline {\relax 5.3}{\ignorespaces Header-Datei der Klasse DifferenceForegroundInferenceAlgorithm}}{23}{figure.5.3}
+\contentsline {figure}{\numberline {\relax 5.4}{\ignorespaces Programmcode des Algorithmus}}{27}{figure.5.4}
+\contentsline {figure}{\numberline {\relax 5.5}{\ignorespaces Klassendiagramm - InferenceAlgorithm-Klasse und Erben}}{28}{figure.5.5}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
