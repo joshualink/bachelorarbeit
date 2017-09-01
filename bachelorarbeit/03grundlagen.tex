@@ -4,18 +4,18 @@ In diesem Kapitel wird das bestehende Probabilistic Scene Model - System vorgest
 Bei der Entwicklung des Systems war das Ziel, ein System zur Erkennung von Szenen zu entwickeln. Dabei sollten viele Informationen umfasst werden. Dies umfasste die beteiligten Objekte bzw. deren Erscheinung, welche von den zur Erkennung eingesetzten Werkzeugen abhängig ist. Die Auftrittshäufigkeit der Objekte sollte ebenfalls mit einfließen. Der Hauptinformationsträger sind die Relationen der Objekte untereinander, welche in Form von relativen Objektlagen berücksichtigt wurden. Es wurde berücksichtigt, dass Relationen nicht statisch, sondern dynamisch sind. Da eine Szene auch unabhängig von ihrem Ort der Demonstration erkannt werden soll, musste die Lagebeschreibung invariant gegenüber Rotation und Translation sein.\smallskip\\
 Weiterhin sollte Robustheit gegenüber verschiedenen Störfaktoren bestehen. Fehlende Objekte sollen eine Erkennung der Szene erlauben, wenn auch mit entsprechend reduzierter Konfidenz. Da jedes Objekt fehlen kann darf es kein zentrales Referenzobjekt geben, von dem die Relationen zu den anderen Objekten der Szene ausgehen. Überzählige Objekte sollen sich nicht negativ auf das Erkennungsergebnis auswirken. Generell soll sich die Funktionsweise des entwickelten Systems im Rahmen dessen bewegen, was plausibel erscheint.\smallskip\\
 Es wird im folgenden erst auf die Struktur des Systems, dann auf die Eingabeverarbeitung, das innere Datenmodell und letztendlich auf die eigentliche Erkennung eingegangen.
+\begin{figure}
+	\centering
+	\includegraphics[width=12cm]{bilder/TellerKontext.pdf}
+	\caption{Zwei Beispielszenen - Ein Objekt in zwei Kontexten \cite{gehrung14}}
+	\label{img:plate}
+\end{figure}
 \begin{deprecated}
 \cite{gehrung14}
 \end{deprecated}
 \subsection{Aufbau}
 Das System ist in mehrere Komponenten aufgeteilt die verschiedenen Aufgaben dienen. Für diese Arbeit wichtig sind vorallem die Komponenten Learner und Inference. Der Learner ist für das Anlernen der Daten und das Einspeichern von Szenen zuständig. Die Inference übernimmt die Erkennung der Szene indem sie in Echtzeit Daten empfängt und die Wahrscheinlichkeiten der Szenen ausgibt. Es gibt außerdem eine Visualizer-Komponente, die dafür zuständig ist, dass verschiedene programminterne Prozesse über Rviz für den Nutzer sichtbar und verständlich gemacht werden.
 \subsection{Learner - Anlernen der Daten}
-\begin{figure}
-	\centering
-	\includegraphics[width=9cm]{bilder/LearnerClass.pdf}
-	\caption{Klassendiagramm des Learner-Moduls \cite{gehrung14}}
-	\label{img:learnerclass}
-\end{figure}
 Die Learnerkomponente berechet aus den Objekten, die sie bekommt, die Parameter für das Szenenmodell, dass für die Erkennung benötigt wird. Der Learner ist in mehrere Teilbereiche eingeteilt, Engine, OCM und Szenenmodell. Engine ist die Schnittstelle des Learners und kapselt die anderen beiden Architekturgliederungen voneinander ab.\smallskip\\
 Abbildung \ref{img:learnerclass} beschreibt den Learner als Klassendiagramm. Die darin vorkommende \textit{SceneLearningEnginge} ist die Schnittstelle des Moduls zum Rest des PSM- Systems. Sie liest die in der Launch-Datei gegebenen Parameter aus und überprüft, ob alle Parameter sich mit dem passenden Datentyp auslesen lassen. Außerdem ist die Klasse für Visualisierung des Modells zuständig, welches gerade gelernt wurde. \smallskip\\
 Die gegebenen Objekte könnene mehrere Szenen beschreiben, da man auch Objekte aus einer Datei auslesen kann und diese jeweils eine pattern variable haben, die beschreibt zu welcher Szene sie zugehörig sind. Für jede Szene die gerade gelernt wird, gibt es einen Lerner in der \textit{SceneModelLearner}-Klasse, welche dafür verantwortlich ist, die einzelnen Lerner zu verwalten. Die Daten der verschiedenen Szenen werden auf die dazugehörigen Lerner aufgeteilt und es gibt eine seperaten Lerner für den Hintergrund, dessen Daten für den Fall wichtig sind, dass keine der Szenen in den gemessenen Objekten vertreten ist. Es ist sozusagen die Szene, die die Gegenwahrscheinlichkeit symbolisiert.\smallskip\\
@@ -23,6 +23,12 @@ Alle Lerner erben vom \textit{SceneLearner}, der eine abstrakte Basisklasse dars
 \begin{deprecated}
 \cite{gehrung14}
 \end{deprecated}
+\begin{figure}
+	\centering
+	\includegraphics[width=9cm]{bilder/LearnerClass.pdf}
+	\caption{Klassendiagramm des Learner-Moduls \cite{gehrung14}}
+	\label{img:learnerclass}
+\end{figure}
 
 \subsection{Model - Szenenmodell}
 \begin{figure}
@@ -30,6 +36,20 @@ Alle Lerner erben vom \textit{SceneLearner}, der eine abstrakte Basisklasse dars
 	\includegraphics[width=8cm]{bilder/Modell.pdf}
 	\caption{Beispiel eines Szenenmodells - Frühstücksszene \cite{gehrung14}}
 	\label{img:modelexample}
+\end{figure}
+\begin{figure}
+	\centering
+	\includegraphics[width=10cm]{bilder/argmax.pdf}
+	\caption{Grafische Darstellung mehrerer Szenenmodelle. Alle werden zur Wahrscheinlichkeitsberechnung genutzt. \cite{gehrung14}}
+	\label{img:argmax}
+\end{figure}
+\begin{figure}
+	\centering
+	\includegraphics[width=10cm]{bilder/terms.pdf}
+	\caption{Das Object Constellation Model(OCM) beschreibt ein einzelnes Szenenobjekt,
+also ein Objekt (hier die Kaffeebox) im Kontext einer Szene. Die Slots
+werden durch die kleinen Kreise rechts symbolisiert und beschreiben jeweils ein Objekt durch die blau eingefärbten Parameter. In gelb sieht man die Grunfwahrscheinlichkeit des Objekts. \cite{gehrung14}}
+	\label{img:terms}
 \end{figure}
 Das Szenenmodell wird als XML-Datei abgespeichert. Dadurch kann man manuell das erstellte Modell lesen, verstehen und verändern, falls dies zum testen nötig ist. Man kann auch leicht mehrere erstellte Szenenmodelle kombinieren, da man alle Parameter verändern und leicht eine zusätzliche Szene aus einem anderen Modell hinzufügen oder ersetzen kann. \smallskip\\ 
 Abbildung \ref{img:modelexample} zeigt ein Beispielmodell für eine Frühstücksszene namens \textit{breakfast} und die immer vorhandene Hintergrundszene \textit{background}. Jeder Szene ist ein apriori-Wert zugeordnet, welcher beschreibt, wie wahrscheinlich es grundsätzlich ist, dass die Szene auftritt, allerdings ist diese im PSM-System generisch gleichverteilt und kommt nur der Vollständigkeit halber vor. Man kann diese Werte falls nötig manuell ändern, das erstellte Szenenmodell der Learner-Komponente wird aber stets gleichverteilte Werte beinhalten. Der Teil der Hintergrundszene im Modell beinhaltet Informationen über die Anzahl unterschiedlicher Objekte und die Größe des Bereichs auf dem Szenen erkannt werden.\smallskip\\

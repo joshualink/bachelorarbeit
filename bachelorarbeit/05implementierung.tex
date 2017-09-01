@@ -19,7 +19,7 @@ In Abbildung \ref{img:filelist} sind Dateien aufgelistet, die im Zuge des Umbaus
 \begin{figure}
 	\centering
 	\includegraphics[width=14cm]{bilder/database.pdf}
-	\caption{Datenbankanbindung des Learner-Moduls}
+	\caption{Datenbankanbindung des Learner-Moduls \cite{gehrung14}}
 	\label{img:database}
 \end{figure}
 Im vergleichbaren ISM-Projekt, welches eine ähnliche Zielsetzung wie das PSM-Projekt hat, allerdings einen nicht stochastischen Ansatz verfolgt, kann man die Szenen, die das System lernen soll aus einer Datenbank auslesen. Aus Gründen der Vergleichbarkeit wie auch dem Komfort ist es sinnig, diese Datenbankschnittstelle für das PSM System nachzurüsten. Um dies zu erreichen wurde ein Datenbankpfad in die Launch-Datei des Learners \textit{learner.launch} hinzugefügt und der veraltete rosbagfiles Parameter damit ersetzt. Die Datenbank wird innerhalb der \textit{SceneLearningEngine} Klasse ausgelesen und die erhaltenen Daten, welche jeweils Vorkommen und von verschiedenen Objekten in diversen Szenen repräsentieren, werden anschließend konvertiert, sodass sie für das System sinnvolle AsrObject-Instanzen werden.\smallskip\\
