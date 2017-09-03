@@ -1,42 +1,66 @@
 \chapter{Evaluation}\label{ch:evaluation}
-\section{Experiment 1: Frühstück}
+Im Kapitel Evaluation wird der implementierte Modus mittels Experimenten getestet. Dies geschiet indem das Erkennungsergebnis des neuen Modus mit dem des bestehenden PSM-Systems verglichen wird. Zu diesem Zweck unterscheiden wir zwischen der differenzbasierten und der parametisierten Erkennung. Die differenzbasierte Erkennung ist der neue Modus, der im Zuge dieser Arbeit entwikelt wurde, die parametisierte Erkennung ist die schon vorhande Erkennung die mittels des Modells und der dort angelernten Parameter Szenenwahrscheinlichkeiten einschätzt.\smallskip\\
+Experiment 1(Kapitel \ref{sec:ex1}) hat eine typische Büroszene als Aufbau und testet die Erkennung anhand der angelernten Daten. Experiment 2(Kapitel \ref{sec:ex2}) beinhaltet mehrere Frühstücksszenen und es werden verschiedene Objekte zu der Evidenz hinzugefügt oder weggenommen. Die Erkennungsdaten werden   währenddessen jeweils von parametisierter und differenzbasierter Erkennung gemessen, verglichen und interpretiert.
+\section{Experiment 1: Büro}\label{sec:ex1}
+In diesem Experiment wird überprüft, wie sich die Erkennung verhält, wenn genau die Daten erkannt werden, welche das System zum anlernen für die Szene erhalten hat. Die Szene enthält zwei Bildschirme, eine Computermaus und eine Tastatur. Maus und Tastatur sind nebeneinander vor den beiden Bildschirmen, welche auch nebeneinander stehen. Die Objekte und deren ungefähre Anordnung kann man in Abbildung \ref{img:allobjects} sehen. Die Szene soll einen gewöhnlichen Rechtshänderarbeitsplatz mit Computer beschreiben.\smallskip\\
+Zwecks dieses Experiments wurden Daten dieser Szene mit dem Learner-Modul angelernt. Dies wurde nur einmal für die differenzbasierte und die parametisierte Erkennung durchgeführt, sodass die beiden Erkennungen auf den gleichen Modelldaten ablaufen und die Erkennungen gut verglichen werden können. Die Szene \textit{office} ist dadurch in beiden Erkennungen gleich definiert. Auch am Computer sowie an dem kompletten PSM-System mit dem getestet wurde, wurde nichts geändert während dem Experiment, um jegliche Unstimmigkeit zwischen den Einzelerkennungens zu vermeiden.\smallskip\\
 \begin{figure}
 	\centering
-	\includegraphics[width=8cm]{bilder/allobjects.pdf}
+	\includegraphics[width=10cm]{bilder/allobjectsbuero.pdf}
 	\caption{Alle Objekte, die bei Experiment 1 genutzt werden \cite{gassner17}}
-	\label{img:allobjects}
-\end{figure}
-\begin{figure}
-	\centering
-	\includegraphics[width=14cm]{bilder/fruehstueckszenen.pdf}
-	\caption{Fr{\"u}hst{\"u}ckszenen Beispiel \cite{gassner17}}
-	\label{img:fruehstueckexample}
-\end{figure}
-\begin{figure}
-	\centering
-	\includegraphics[width=14cm]{bilder/evaluationfruehstueckszenen.pdf}
-	\caption{Fr{\"u}hst{\"u}ckszenen \cite{gassner17}}
-	\label{img:fruehstueck}
-\end{figure}
-\section{Experiment 2: Büro}
-\begin{figure}
-	\centering
-	\includegraphics[width=12cm]{bilder/allobjectsbuero.pdf}
-	\caption{Alle Objekte, die bei Experiment 2 genutzt werden \cite{gassner17}}
 	\label{img:allobjectsbuero}
 \end{figure}
+ In Abbildung \ref{img:buero} sieht man eine Visualisierung der angelernten Daten. In der Abbildung sieht man einerseits große rote Pfeile, die jeweils die Ausrichtung des Objekts zeigen und kleinere bunte Linien, welche jeweils eine Position und Orientierung des Objekts beschreiben. Man sieht zum Beispiel, dass die Tastatur meist in einem gewissen Viereck verrückt wird, die Maus in verschiedene Richtungen verschoben wird und unteranderem, dass die beiden Bildschirme nicht verrückt werden, sondern nur in der Höhe verstellbar sind. Die Positionen sind jeweils in rot, blau und grün gehalten und zusätzlich wurden die Bereiche eingefärbt in denen sich das jeweilige Objekt am ehesten aufhält. Es wird also ein gewisses Muster zwischen den anzulernenden Objekten gesucht und eingespeichert.\smallskip\\
+Nach dem Anlernen der Daten wurden die selben Daten so im System simuliert, als würden sie gerade als Objektevidenz von der Objekterkennung erkannt werden. Die beiden Erkennungsalgorithmen wurden nacheinander laufen gelassen, allerdings wurden die jeweiligen Szeneninstanzen, das heißt, die Sets aus den zu erkennenden Daten, einander zugeordnet. Dadurch kann man die beiden Erkennungen setweise miteinander vergleichen und ein Gesamtergebnis aus den Einzelvergleichen ziehen.\smallskip\\
+In Abbildung \ref{img:buerowahrscheinlichkeit} sind beispielhaft ein paar Vergleiche dokumentiert. Die Wahrscheinlichkeiten sind jeweils relativ zueinander berechnet, nehmen Werte zwischen 0 und 1 an und ergeben in der Summe 1. Links sieht man jeweils das Erkennungsergebnis der parametisierten Erkennung eines Sets, rechts das jeweilige Ergebnis der differenzbasierten Erkennung. Man sieht, dass die parametisierte Erkennung jeweils einen hohen Wahrscheinlichkeitswert für die \textit{office}-Szene hat und einen geringen für die Hintergrundszene. Die differenzbasierte Erkennung erkennt die \textit{office}-Szene in jedem Set mit einer beinahe hundertprozentigen Wahrscheinlichkeit und schwangt kaum zwischen den Sets, während die parametisierte Erkennung kleine Unterschiede zwischen den einzelnen Messungen aufweist. Alle Messungen erkennen die \textit{office}-Szene beinahe eindeutig.\smallskip\\
 \begin{figure}
 	\centering
-	\includegraphics[width=12cm]{bilder/evaluationbueroszene.pdf}
+	\includegraphics[width=10cm]{bilder/evaluationbueroszene.pdf}
 	\caption{Angelernte Daten der B{\"u}roszene \cite{gassner17}}
 	\label{img:buero}
 \end{figure}
+Diese Beobachtungen sind wie folgt zu erklären. Dass in jeder Messung die Szene mit hoher Wahrscheinlichkeit erkannt wird ist nicht verwunderlich, da die Daten, die zur Modellerzeugung genutzt wurden, schließlich die im Verlauf des Experiments erkannten Daten enthalten. Man muss stets bedenken, dass die Wahrscheinlichkeiten, die in den Messungen vorkommen relative Wahrscheinlichkeiten sind. Das heißt, man sieht wie Wahrscheinlich es ist dass die Szene \textit{office} auftritt im Vergleich zu der Hintergrundszene. Damit ist die Wahrscheinlichkeit, die  bei der parametisierten Erkennung für die \textit{office}-Szene ausgegeben wird immer etwas geringer, als sie erscheint, da sie im Bezug auf eine geringe Hintergrundwahrscheinlichkeit berechnet wurde. Genauso sind die Schwankungen der eigentlichen Szenenwahrscheinlichkeit möglicherweise größer, als es auf den ersten Blick erscheint. Im gesamten sollte die Szenenahrscheinlichkeit überall zwischen 80 und 90 Prozent liegen.\smallskip\\
+Das nicht komplett eindeutige Erkennungsergebnis lässt sich auf die Parametisierung der Erkennung zurück führen. Es wurde ein Modell aufgrund aller Daten erstellt, welches natürlich nicht mehr jede einzelne Messung mit hundertprozentiger Wahrscheinlichkeit erkennt, da es ein größeres Modell ist, dass sich alle Einzelmessungen zur Basis genommen hat. Die Schwankungen der Messung können sich allerdings auch durch die dynamische Hintergrundwahrscheinlichkeit begründen. Wenn das Erkennungssystem unterschiedliche Daten erhält, verändert sich die errechnete Hintergrundszenenwahrscheinlichkeit, wodurch sich logischerweise auch die relative Wahrscheinlichkeit der Szenen verändert.\smallskip\\
 \begin{figure}
 	\centering
 	\includegraphics[width=10cm]{bilder/buerowahrscheinlichkeit.pdf}
 	\caption{Erkennungswahrscheinlichkeiten der B{\"u}roszene}
 	\label{img:buerowahrscheinlichkeit}
 \end{figure}
-Viele Bilder, beschreiben Daten\\
-Text interpretiert\\
-Fazit am Ende \\
+Die Erkennungsergebnisse für die differenzbasierte Erkennung lassen sich leicht interpretieren und erklären. Die Wahrscheinlichkeit ist bei jeder Messung beinahe hundertprozentig, da es immer eine Szeneninstanz in den Daten gibt, die sich von der erkannten Evidenz nicht unterscheiden lässt. Dadurch ergibt sich ein hundertprozentiges Ergebnis bei der Szenenwahrscheinlichkeit, welches dann mit der geringen Hintergrundwahrscheinlichkeit verrechnet wird. Die geringen Schwankungen lassen sich dadurch erklären, dass die Hintergrundwahrscheinlichkeit nicht statisch berechnet wird, sondern ein Schwellenwert als Parameter gesetzt wird. Dadurch schwankt die Hintergrundwahrscheinlichkeit nicht und kann auch das Ergebnis in keinster Weise beeinflussen.\smallskip\\
+Im gesamten lässt sich sagen, dass die differenzbasierte Erkennung die Szene noch sicherer erkannt hat, als die parametisierte Erkennung, da sie direkt mit den Daten arbeitet, welche sie gelernt hat. Das Experiment zeigt damit, dass es in gewissen Fällen präziser sein kann direkt mit den Beispieldaten zu arbeiten, die man von einer Szene hat. Allerdings ist es in der Realität unmöglich eine Szene perfekt aufzubauen, wie sie in den Daten vorkommt. Um die differenzbasierte Erkennung auch in einem weniger realitätsfernen Kontext zu testen folgt Experiment 2(Kapitel \ref{sec:ex2}).
+\section{Experiment 2: Frühstück}\label{sec:ex2}
+\begin{figure}
+	\centering
+	\includegraphics[width=8cm]{bilder/allobjects.pdf}
+	\caption{Alle Objekte, die bei Experiment 2 genutzt werden \cite{gassner17}}
+	\label{img:allobjects}
+\end{figure}
+Im Experiment Frühstück werden mehrere verschiedene Frühstücksszenen erkannt. Es werden wieder beide Erkennungsalgorithmen die gleiche Evidenz überprüfen gelassen und die daraus resultierenden Ergebnisse verglichen und interpretiert. In Abbildung \ref{img:allobjects} sieht man alle Objekte die im Zuge dieses Experiments vorkommen und deren Orientierung. Die Objekte werden im Versuch nur auf die Weise angeordnet sein, wie sie in der Abbildung zu erkennen sind. Aus dieser Anordnung werden dann Objekte entfernt oder hinzugefügt. Für die Verständlichkeit werden allen Objekten im folgenden Namen zugeordnet. Von links nach rechts sieht man eine Schüssel, eine Kaffeebox, eine Müslipackung, einen Becher, einen Teller, eine Cornflakespackung und einen Milchkrug.\smallskip\\
+Diese Gesamtheit der in diesem Experiment vorkommenden Objekte werden nun ihren Szenen zugeteilt. Dabei gilt keine Exklusivität eines Objekts für eine Szene, ein Objekt kann also auch in beiden Szenen vorkommen. Die zwei Frühstücksszenen die in diesem Experiment angelernt und erkannt werden sollen sieht man in Abbildung \ref{img:fruehstueckexample}. Die linke Szene trägt im System den Titel \textit{breakfast\_A} und die rechte den Titel \textit{breakfast\_B}. Außerdem gibt es in jeder im folgenden vorkommenden Messung die obligatorische Hintergrundszene \textit{background}.\smallskip\\
+\begin{figure}
+	\centering
+	\includegraphics[width=14cm]{bilder/fruehstueckszenen.pdf}
+	\caption{Beispiel beider Fr{\"u}hst{\"u}ckszenen \cite{gassner17}}
+	\label{img:fruehstueckexample}
+\end{figure}
+Die verschiedenen Objekte die in Abbildung \ref{img:allobjects} gezeigt wurden, wurden nun in verschiedenen Konstellationen und Kombinationen simuliert und die entsprechenden Erkennungsergebnisse der differenzbasierten und parametisierten Erkennung festgehalten. In Abbildung \ref{img:fruehstueck} sieht man ausgewählte Erkennungsergebnisse, die bei diesem Experiment entstanden sind. Links ist jeweils das Ergebnis der parametisierten Erkennung, in der Mitte sieht man die aktuelle Evidenz die überprüft wird und rechts werden die Erkennungsergebnisse der differenzbasierten Erkennung dargestellt. Dabei gliedert sich die Abbildung zeilenweise in sieben verschiedene Messungen, auf die im folgenden als Messung 1 bis 7 referenziert wird.\smallskip\\
+Messung 1 hat einen möglichen Aufbau der Szene \textit{breakfast\_A} zur Evidenz. Wie erwartet erkennen beide Erkennungsmodi die aufgebaute Szene mit hoher Wahrscheinlichkeit und die Szene \textit{breakfast\_B} hat einen niedrigen Wert. Die differenzbasierte Erkennung hat jedoch noch eindeutigere Wahrscheinlichkeitswerte als die parametisierte Erkennung, \textit{breakfast\_A} hat also einen höheren Wert und die andere Szene einen niedrigeren. Dies lässt sich auf darauf zurückführen, dass die Szene in etwa wie sie aufgebaut wurde, auch in den Daten vorkommt. Dadurch hat die Szene eine besonders hohe Szenenwahrscheinlichkeit gegenüber der parametisierten Erkennung. Die parametisierte Erkennung hat außerdem einen höheren Wert für die Szene  \textit{breakfast\_B}, da zwei Objekte aus dem Modell genau richtig platziert sind. Dies erzeugt einen etwas größeren Wert als die entsprechende Szenenwahrscheinlichkeit bei der differenzbasierten Erkennung.\smallskip\\
+\begin{figure}
+	\centering
+	\includegraphics[width=14cm]{bilder/evaluationfruehstueckszenen.pdf}
+	\caption{Erkennungswahrscheinlichkeit der Fr{\"u}hst{\"u}ckszenen \cite{gassner17}}
+	\label{img:fruehstueck}
+\end{figure}
+Messung 2 enhält alle Objekte aus Szene \textit{breakfast\_A} bis auf die Müslipackung. Damit enthält sie drei Objekte der Szene A und zwei Objekte der Szene B. Dies sieht man auch in den Wahrscheinlichkeitsergebnissen. Die Hintergrundszene wird wahrscheinlicher, da keine Szene komplett erkannt wurde und  Szene B bekommt einen höheren Wert für die relativen Wahrscheinlichkeiten. Eigentlich sinkt hauptsächlich die Szenenwahrscheinlichkeit für Szene A und dadurch steigen die beiden anderen Wahrscheinlichkeiten an, da sie im Verhältnis zur Wahrscheinlichkeit für Szene A größer werden. Die Ergebnisse der beiden Erkennungen sind ähnlich, nur die Hintergrundwahrscheinlichkeit der differenzbasierten Erkennung ist etwas höher, da die beiden anderen Szenenwahrscheinlichkeiten etwas niedriger sind als bei der parametisierten Erkennung.\smallskip\\
+In Messung 3 sind nur noch Becher und Teller enthalten, sodass beide Szenen nur halb vorkommen. In beiden Erkennungsmodi sind jeweils die Wahrscheinlichkeiten der Szenen A und B nahezu identisch. Nur die Hintergrundwahrscheinlichkeit unterscheidet sich. Bei der parametisierten Erkennung sind sie etwas niedriger als die anderen Szenenwahrscheinlichkeiten, bei der differenzbasierten Erkennung ist sie in etwa doppelt so groß. Die differenzbasierte Erkennung ist empfindlicher bei fehlenden Objekten als die parametisierte Erkennung.\smallskip\\
+In Messung 4 wird der Milchkrug zu den vorherigen Objekten hinzugefügt. Das führt dazu, dass die Wahrscheinlichkeit für Szene B bei beiden Erkennungen erheblich ansteigt. Es fällt auf dass bei der differenzbasierten Erkennung die Hintergrundwahrscheinlichkeit erheblich höher und damit die Wahrscheinlichkeit für Szene B etwas kleiner ist. Dies zeigt wiederum, dass Szenen bei Unvollständigkeit nicht so deutlich erkannt werden wie bei der parametisierten Erkennung. Für nahezu eindeutige Erkennung braucht die differenzbasierte Erkennung in jedem Fall das Auftreten aller Objekte.\smallskip\\
+In Messung 5 entspricht die Evidenz Szene \textit{breakfast\_B} und Ergebnisse sind bei beiden Erkennungen beinahe identisch. Eine hohe Wahrscheinlichkeit bei Szene B und eine niedrige Wahrscheinlichkeit bei Szene A. Die Szene wurde ähnlich angelernt wie sie in der Evidenz vorkommt, das Ergebnis ist also nicht verwunderlich.
+In Messung 6 besteht die Evidenz aus der Kaffeebox, der Müslipackung, der Cornflakespackung und dem Milchkrug. Diese Messung zeigt die signifikantesten Unterscheide Zwischen den Erkennungen auf. Bei der parametisierten Erkennung ist die Hintergrundwahrscheinlichkeit beinahe bei null und die Szenenwahrscheinlichkeiten für Szene A und B in etwa bei 0,5. Bei der differenzbasierten Erkennung ist die Hintergrundwahrscheinlichkeit in etwa bei 0,6 und die anderen Wahrscheinlichkeiten bei 0,2. In der Evidenz kommen jeweils zwei objekte der Szenen vor und die Empfindlichkeit gegenüber Szenenunvollständigkeit der differenzbasierten Erkennung wird nochmals klar ersichtlich.\smallskip\\
+In Messung 7 sind alle Objekte in der Evidenz vorhanden die in Abbildung \ref{allobjects} gezeigt wurden. In den Wahrscheinlichkeitsergebnissen der beiden Erkennungsergebnisse gibt es unerwarteterweise offensichtliche Unterschiede. Beide Erkennungen weisen eine Hintergrundszenenwahrscheinlichkeit von nahezu null auf, während aber bei der differenzbasierten Erkennung beide Szenen gleichermaßen mit fünfzigprozentiger Auftrittswahrscheinlichkeit ausgegeben werden, wird bei der parametisierten Erkennung Szene B als in etwas doppelt so wahrscheinlich wie Szene A bestimmt. \smallskip\\
+Da das Ergebnis nicht erwartet wurde, wurde anschließend eine ähnliche Evidenz überprüft, bei der die Schüssel weggelassen wurde. Die Evidenz erzeugt mit beiden Erkennnugen ein ausgeglichenes fünfzigprozentiges Ergebnis für Szene A und B. Es scheint als habe das zusätzliche Objekt, welches in keiner der Szenen vorkommt die parametisierte Erkennung beeinflusst, während die differenzbasierte Erkennung davon unbeeinflusst blieb.\smallskip\\
+\section{Fazit}
+Im Zuge der vorliegenden Arbeit wurde ein neuer Modus für das PSM-System entwickelt, welcher dichter an den gegebenen Daten arbeitet. Bei den beiden Experimenten konnte man gut sehen, dass es Situationen gibt in denen der differenzbasierte Modus präziser scheint und Situationen in der gänzlich andere Ergebnisse erzeugt werden. In Experiment 1 sieht man, dass die differenzbasierte Erkennung direkt an den Daten arbeitet und diese, falls sie in der Evidenz vorkommen zuverlässig und eindeutig wiedererkennt.\smallskip\\
+In Experiment 2 war es schwieriger die Vergleichbarkeit der beiden Erkennungsmodi zu gewährleisten, da beide Erkennungen gewisse Parameter annehemen die nicht direkt vergleichbar sind. Die differenzbasierte Erkennung nimmt Schwellenwerte für die Positionierung und Rotation der Szenenobjekte, sowie für die Hintergrundwahrscheinlichkeit entgegen, während die parametisierte Erkennung alle Parameter über das Modell erhält. Alle Parameter wurden für Experiment 2 mit mehreren Testläufen feinjustiert, allerdings sind sie sicher noch nicht optimal.\smallskip\\
+Es lässt sich aber sagen, dass die differenzbasierte Erkennung mit der gennutzten Parametisierung empflindlicher auf fehlende Szenenobjekte reagiert und komplette Szenen deutlicher erlennt. Alles in allem ist der differenzbasierte Modus eine Bereicherung für das PSM-System, die schon allein aus Vergleichszwecken weiter genutzt werden sollte und weiter entwickelt werden kann.
+
