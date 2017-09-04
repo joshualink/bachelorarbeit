@@ -24,10 +24,7 @@ In Abbildung \ref{img:filelist} sind Dateien aufgelistet, die im Zuge des Umbaus
 \end{figure}
 Im vergleichbaren ISM-Projekt, welches eine ähnliche Zielsetzung wie das PSM-Projekt hat, allerdings einen nicht stochastischen Ansatz verfolgt, kann man die Szenen, die das System lernen soll aus einer Datenbank auslesen. Aus Gründen der Vergleichbarkeit wie auch dem Komfort ist es sinnig, diese Datenbankschnittstelle für das PSM System nachzurüsten. Um dies zu erreichen wurde ein Datenbankpfad in die Launch-Datei des Learners \textit{learner.launch} hinzugefügt und der veraltete rosbagfiles Parameter damit ersetzt. Die Datenbank wird innerhalb der \textit{SceneLearningEngine} Klasse ausgelesen und die erhaltenen Daten, welche jeweils Vorkommen und von verschiedenen Objekten in diversen Szenen repräsentieren, werden anschließend konvertiert, sodass sie für das System sinnvolle AsrObject-Instanzen werden.\smallskip\\
 Für den Zugriff auf die Datenbank nutzt die Engine-Klasse die im ISM-System gestellte Hilfsklasse \textit{TableHelper}, die auf die Erkennungssysteme zugeschnittene Funktionen beinhaltet, die man für den Datenbankzugriff nutzen kann.\smallskip\\
-In Abbildung \ref{img:database} sieht man deutlich, wo der Datenbankzugriff im Learner Klassendiagramm geschiet, nämlich bei der \textit{SceneLearningEngine}-Klasse im gekapselten Bereich der Engine. Die Pfeile simbolisieren den Austausch zwischen Programmcode und Datenbank. Der Programmcode schickt anfragen, die Datenbank liefert die gewollten Daten, falls die Anfragen korrekt sind.
-\begin{deprecated}
-\cite{gehrung14}
-\end{deprecated}
+In Abbildung \ref{img:database} sieht man deutlich, wo der Datenbankzugriff im Learner Klassendiagramm geschiet, nämlich bei der \textit{SceneLearningEngine}-Klasse im gekapselten Bereich der Engine. Die Pfeile simbolisieren den Austausch zwischen Programmcode und Datenbank. Der Programmcode schickt anfragen, die Datenbank liefert die gewollten Daten, falls die Anfragen korrekt sind.\cite{gehrung14}
 
 \section{Differenzbasierter Erkennungsalgorithmus}
 Einerseits beschreibt dieses Kapitel, wie der im Konzept vorgestellte Algorithmus programmiertechnisch umgesetzt, andererseits wie dieser in das bestehende System eingebunden wurde. 
