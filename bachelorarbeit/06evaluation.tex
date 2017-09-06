@@ -23,7 +23,7 @@ Diese Beobachtungen sind wie folgt zu erklären. Dass in jeder Messung die Szene
 Das nicht komplett eindeutige Erkennungsergebnis lässt sich auf die Parametisierung der Erkennung zurück führen. Es wurde ein Modell aufgrund aller Daten erstellt, welches natürlich nicht mehr jede einzelne Messung mit hundertprozentiger Wahrscheinlichkeit erkennt, da es ein größeres Modell ist, dass sich alle Einzelmessungen zur Basis genommen hat. Die Schwankungen der Messung können sich allerdings auch durch die dynamische Hintergrundwahrscheinlichkeit begründen. Wenn das Erkennungssystem unterschiedliche Daten erhält, verändert sich die errechnete Hintergrundszenenwahrscheinlichkeit, wodurch sich logischerweise auch die relative Wahrscheinlichkeit der Szenen verändert.\smallskip\\
 \begin{figure}
 	\centering
-	\includegraphics[width=10cm]{bilder/buerowahrscheinlichkeit.pdf}
+	\includegraphics[width=12cm]{bilder/buerowahrscheinlichkeit.pdf}
 	\caption{Erkennungswahrscheinlichkeiten der B{\"u}roszene}
 	\label{img:buerowahrscheinlichkeit}
 \end{figure}
@@ -48,7 +48,7 @@ Die verschiedenen Objekte die in Abbildung \ref{img:allobjects} gezeigt wurden, 
 Messung 1 hat einen möglichen Aufbau der Szene \textit{breakfast\_A} zur Evidenz. Wie erwartet erkennen beide Erkennungsmodi die aufgebaute Szene mit hoher Wahrscheinlichkeit und die Szene \textit{breakfast\_B} hat einen niedrigen Wert. Die differenzbasierte Erkennung hat jedoch noch eindeutigere Wahrscheinlichkeitswerte als die parametisierte Erkennung, \textit{breakfast\_A} hat also einen höheren Wert und die andere Szene einen niedrigeren. Dies lässt sich auf darauf zurückführen, dass die Szene in etwa wie sie aufgebaut wurde, auch in den Daten vorkommt. Dadurch hat die Szene eine besonders hohe Szenenwahrscheinlichkeit gegenüber der parametisierten Erkennung. Die parametisierte Erkennung hat außerdem einen höheren Wert für die Szene  \textit{breakfast\_B}, da zwei Objekte aus dem Modell genau richtig platziert sind. Dies erzeugt einen etwas größeren Wert als die entsprechende Szenenwahrscheinlichkeit bei der differenzbasierten Erkennung.\smallskip\\
 \begin{figure}
 	\centering
-	\includegraphics[width=14cm]{bilder/evaluationfruehstueckszenen.pdf}
+	\includegraphics[width=15cm]{bilder/evaluationfruehstueckszenen.pdf}
 	\caption{Erkennungswahrscheinlichkeit der Fr{\"u}hst{\"u}ckszenen \cite{gassner17}}
 	\label{img:fruehstueck}
 \end{figure}

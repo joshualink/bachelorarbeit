@@ -14,47 +14,58 @@ The style file: babalpha-fl.bst
 Database file #1: diplomarbeit.bib
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
-Warning--empty language in davis93
+Warning--empty language in crmo81
+Warning--empty journal in crmo81
+Warning--empty journal in fepezi03
+Warning--empty journal in fepezi05
+Warning--empty journal in gassner17
+Warning--empty journal in gich14
 Warning--empty journal in gehrung14
-You've used 2 entries,
+Warning--empty journal in hosc99
+Warning--empty journal in kuinin94
+Warning--empty journal in kaam72
+Warning--empty journal in mehlhaus16
+Warning--empty journal in mehopa07
+Warning--empty journal in sibo96
+You've used 12 entries,
             3218 wiz_defined-function locations,
-            714 strings with 6822 characters,
-and the built_in function-call counts, 1029 in all, are:
-= -- 92
-> -- 33
-< -- 2
-+ -- 11
-- -- 11
-* -- 107
-:= -- 155
-add.period$ -- 6
-call.type$ -- 2
-change.case$ -- 12
-chr.to.int$ -- 2
-cite$ -- 4
-duplicate$ -- 48
-empty$ -- 83
-format.name$ -- 23
-if$ -- 205
+            765 strings with 8899 characters,
+and the built_in function-call counts, 6083 in all, are:
+= -- 559
+> -- 225
+< -- 11
++ -- 76
+- -- 75
+* -- 582
+:= -- 852
+add.period$ -- 24
+call.type$ -- 12
+change.case$ -- 74
+chr.to.int$ -- 12
+cite$ -- 25
+duplicate$ -- 321
+empty$ -- 489
+format.name$ -- 151
+if$ -- 1291
 int.to.chr$ -- 1
 int.to.str$ -- 0
-missing$ -- 4
-newline$ -- 26
-num.names$ -- 6
-pop$ -- 13
+missing$ -- 24
+newline$ -- 64
+num.names$ -- 36
+pop$ -- 113
 preamble$ -- 1
-purify$ -- 14
+purify$ -- 86
 quote$ -- 0
-skip$ -- 32
+skip$ -- 256
 stack$ -- 0
-substring$ -- 48
-swap$ -- 16
-text.length$ -- 2
-text.prefix$ -- 1
+substring$ -- 288
+swap$ -- 130
+text.length$ -- 11
+text.prefix$ -- 3
 top$ -- 0
-type$ -- 16
-warning$ -- 2
-while$ -- 9
-width$ -- 4
-write$ -- 38
-(There were 2 warnings)
+type$ -- 96
+warning$ -- 13
+while$ -- 49
+width$ -- 14
+write$ -- 119
+(There were 13 warnings)

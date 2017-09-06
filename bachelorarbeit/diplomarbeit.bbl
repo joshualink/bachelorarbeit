@@ -1,4 +1,4 @@
-\begin{thebibliography}{DSS93}
+\begin{thebibliography}{MHPH07}
   \providebibliographyfont{name}{}%
   \providebibliographyfont{lastname}{}%
   \providebibliographyfont{title}{\emph}%
@@ -13,25 +13,111 @@
   \expandafter\btxselectlanguage\expandafter {\btxfallbacklanguage}
 
 \expandafter\btxselectlanguage\expandafter {\btxfallbacklanguage}
-\bibitem [{DSS93}]{davis93}
-\btxnamefont {Randall \btxlastnamefont {Davis}}, \btxnamefont {Howard
-  \btxlastnamefont {Shrobe}}\btxandcomma {} \btxandlong {}\ \btxnamefont {Peter
-  \btxlastnamefont {Szolovits}}\btxauthorcolon\ \btxjtitlefont
-  {\btxifchangecase {What is a knowledge representation?}{What is a Knowledge
-  Representation?}}
-\newblock \btxjournalfont {AI Magazine}, 14(1):17--33, 1993.
-\newblock {\latintext
-  \btxurlfont{http://www.aaai.org/ojs/index.php/aimagazine/article/view/1029}}.
+\bibitem [{CM81}]{crmo81}
+\btxnamefont {B.\btxfnamespacelong D. \btxlastnamefont {Craven}} \btxandlong
+  {}\ \btxnamefont {B. \btxlastnamefont {Mond}}\btxauthorcolon\ \btxjtitlefont
+  {\btxifchangecase {Linear programming with matrix variables}{Linear
+  programming with matrix variables}}.
+\newblock \btxpageslong {}\ 73--80, 1981.
+
+\bibitem [{FPZ03}]{fepezi03}
+\btxnamefont {Robert \btxlastnamefont {Fergus}}, \btxnamefont {Pietro
+  \btxlastnamefont {Perona}}\btxandcomma {} \btxandlong {}\ \btxnamefont
+  {Andrew \btxlastnamefont {Zisserman}}\btxauthorcolon\ \btxjtitlefont
+  {\btxifchangecase {Object class recognition by unsupervised scale-invariant
+  learning}{Object class recognition by unsupervised scale-invariant
+  learning}}.
+\newblock 2003.
+
+\bibitem [{FPZ05}]{fepezi05}
+\btxnamefont {Robert \btxlastnamefont {Fergus}}, \btxnamefont {Pietro
+  \btxlastnamefont {Perona}}\btxandcomma {} \btxandlong {}\ \btxnamefont
+  {Andrew \btxlastnamefont {Zisserman}}\btxauthorcolon\ \btxjtitlefont
+  {\btxifchangecase {A sparse object category model for efficient learning and
+  exhaustive recognition}{A sparse object category model for efficient learning
+  and exhaustive recognition}}.
+\newblock 2005.
+
+\bibitem [{Ga{\ss}17}]{gassner17}
+\btxnamefont {Nikolai\btxfnamespacelong Andreas \btxlastnamefont
+  {Ga{\ss}ner}}\btxauthorcolon\ \btxjtitlefont {\btxifchangecase
+  {Probabilistische szenenerkennung durch hierarchische constellation models
+  über räumliche relationen aus demonstrierten
+  objekttrajektorien}{Probabilistische Szenenerkennung durch hierarchische
+  Constellation Models über räumliche Relationen aus demonstrierten
+  Objekttrajektorien}}.
+\newblock \btxpageslong {}\ 30--85, 2017.
+
+\bibitem [{GC14}]{gich14}
+\btxnamefont {Jean\btxfnamespacelong Dickinson \btxlastnamefont {Gibbons}}
+  \btxandlong {}\ \btxnamefont {Subhabrata \btxlastnamefont
+  {Chakraborti}}\btxauthorcolon\ \btxjtitlefont {\btxifchangecase
+  {Nonparametric statistical inference}{Nonparametric Statistical Inference}}.
+\newblock \btxpageslong {}\ 977--979, 2014.
 
 \bibitem [{Geh14}]{gehrung14}
 \btxnamefont {Joachim \btxlastnamefont {Gehrung}}\btxauthorcolon\
-  \btxjtitlefont {\btxifchangecase {Probabilistische szenenerkennung durch
-  hierarchische constellation models über räumliche relationen aus
-  demonstrierten objekttrajektorien}{Probabilistische Szenenerkennung durch
-  hierarchische Constellation Models über räumliche Relationen aus
-  demonstrierten Objekttrajektorien}}.
+  \btxjtitlefont {\btxifchangecase {Ausgewählte algorithmen zur
+  kombinatorischen optimierung der räumlichen relationen in probabilistic
+  scene models}{Ausgewählte Algorithmen zur kombinatorischen Optimierung der
+  räumlichen Relationen in Probabilistic Scene Models}}.
 \newblock \btxpageslong {}\ 5--63, 2014.
-\newblock {\latintext
-  \btxurlfont{http://www.aaai.org/ojs/index.php/aimagazine/article/view/1029}}.
+
+\bibitem [{HS99}]{hosc99}
+\btxnamefont {Eva \btxlastnamefont {Hornecker}} \btxandlong {}\ \btxnamefont
+  {Kai \btxlastnamefont {Schäfer}}\btxauthorcolon\ \btxjtitlefont
+  {\btxifchangecase {Gegenständliche modellierung virtueller
+  informationswelten}{Gegenständliche Modellierung virtueller
+  Informationswelten}}.
+\newblock \btxpageslong {}\ 149 -- 159, 1999.
+
+\bibitem [{KII94}]{kuinin94}
+\btxnamefont {Y. \btxlastnamefont {Kuniyoshi}}, \btxnamefont {M.
+  \btxlastnamefont {Inaba}}\btxandcomma {} \btxandlong {}\ \btxnamefont {H.
+  \btxlastnamefont {Inoue}}\btxauthorcolon\ \btxjtitlefont {\btxifchangecase
+  {Learning by watching: extracting reusable task knowledge from visual
+  observation of human performance}{Learning by watching: extracting reusable
+  task knowledge from visual observation of human performance}}.
+\newblock \btxpageslong {}\ 799 -- 822, 1994.
+
+\bibitem [{KT72}]{kaam72}
+\btxnamefont {Daniel \btxlastnamefont {Kahneman}} \btxandlong {}\ \btxnamefont
+  {Amos \btxlastnamefont {Tversky}}\btxauthorcolon\ \btxjtitlefont
+  {\btxifchangecase {Subjective probability: A judgment of
+  representativeness}{Subjective probability: A judgment of
+  representativeness}}.
+\newblock \btxpageslong {}\ 430--454, 1972.
+
+\bibitem [{Meh16}]{mehlhaus16}
+\btxnamefont {Jonas \btxlastnamefont {Mehlhaus}}\btxauthorcolon\ \btxjtitlefont
+  {\btxifchangecase {Komparative analyse ausgewählter algorithmen zur
+  kombinatorischen optimierung der räumlichen relationen in hierarchischen
+  implicit shape models}{Komparative Analyse ausgewählter Algorithmen zur
+  kombinatorischen Optimierung der räumlichen Relationen in hierarchischen
+  Implicit Shape Models}}.
+\newblock \btxpageslong {}\ 22--53, 2016.
+
+\bibitem [{MHPH07}]{mehopa07}
+\btxnamefont {Christian \btxlastnamefont {Meyer}}, \btxnamefont {Rebecca
+  \btxlastnamefont {Hollmann}}, \btxnamefont {Christopher \btxlastnamefont
+  {Parlitz}}\btxandcomma {} \btxandlong {}\ \btxnamefont {Martin
+  \btxlastnamefont {Hägele}}\btxauthorcolon\ \btxjtitlefont {\btxifchangecase
+  {Programmieren durch vormachen für assistenzsysteme – schweiß- und
+  klebebahnen intuitiv programmieren (programming by demonstration for
+  assistive systems – intuitive programming of welding and gluing
+  trajectories)}{Programmieren durch Vormachen für Assistenzsysteme –
+  Schweiß- und Klebebahnen intuitiv programmieren (Programming by
+  Demonstration for Assistive Systems – Intuitive Programming of Welding and
+  Gluing Trajectories)}}.
+\newblock 2007.
+
+\bibitem [{SB96}]{sibo96}
+\btxnamefont {Prof.\btxfnamespacelong Dr.\btxfnamespacelong
+  Ing.\btxfnamespacelong Hans\btxfnamespacelong Jürgen \btxlastnamefont
+  {Siegert}} \btxandlong {}\ \btxnamefont {Dr.\btxfnamespacelong Siegfried
+  \btxlastnamefont {Bocionek}}\btxauthorcolon\ \btxjtitlefont {\btxifchangecase
+  {Robotik: Programmierung intelligenter roboter}{Robotik: Programmierung
+  intelligenter Roboter}}.
+\newblock 1996.
 
 \end{thebibliography}
